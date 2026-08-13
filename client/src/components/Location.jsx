@@ -23,7 +23,7 @@ const Location = () => {
 
           <h3>EXPERIENCE STORES</h3>
 
-          <h4>ACCROSS USA</h4>
+          <h4>ACROSS USA</h4>
 
           <hr
             style={{
@@ -71,7 +71,7 @@ const Location = () => {
 
           <div className="div-one">
             <img src={img4} alt="" />
-            <p>Wahington</p>
+            <p>Washington</p>
           </div>
 
           <div className="div-one">

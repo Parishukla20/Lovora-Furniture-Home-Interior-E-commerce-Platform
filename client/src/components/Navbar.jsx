@@ -1,3 +1,5 @@
+import img1 from "../assets/IMAGES/search.svg";
+
 const Navbar = () => {
   return (
     <div id="nav">
@@ -10,7 +12,7 @@ const Navbar = () => {
       </div>
 
       <div className="search">
-        <img src="src/assets/Images/search.svg" alt="" />
+        <img src={img1} alt="" />
         <input type="text" placeholder="search furniture, decor & more..."/>
       </div>
 
