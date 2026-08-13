@@ -1,11 +1,11 @@
-import img1 from "../assets/images/th (6).jpeg";
-import img2 from "../assets/images/th (7).jpeg";
-import img3 from "../assets/images/th (8).jpeg";
-import img4 from "../assets/images/th (9).jpeg";
-import img5 from "../assets/images/th (10).jpeg";
-import img6 from "../assets/images/th (12).jpeg";
-import img7 from "../assets/images/th (11).jpeg";
-import img8 from "../assets/images/th (14).jpeg";
+import img1 from "../assets/IMAGES/th (6).jpeg";
+import img2 from "../assets/IMAGES/th (7).jpeg";
+import img3 from "../assets/IMAGES/th (8).jpeg";
+import img4 from "../assets/IMAGES/th (9).jpeg";
+import img5 from "../assets/IMAGES/th (10).jpeg";
+import img6 from "../assets/IMAGES/th (12).jpeg";
+import img7 from "../assets/IMAGES/th (11).jpeg";
+import img8 from "../assets/IMAGES/th (14).jpeg";
 
 const Location = () => {
   return (

@@ -1,11 +1,11 @@
-import img1 from "../assets/images/th (1).jpeg";
-import img2 from "../assets/images/Wooden-Furniture-Chair-PNG-Image.png";
-import img3 from "../assets/images/thumb-1920-740968.jpg";
-import img4 from "../assets/images/Desktop-Floor-Pictures.jpg";
-import img5 from "../assets/images/2076241.webp";
-import img6 from "../assets/images/th (3).jpeg";
-import img7 from "../assets/images/th.jpeg";
-import img8 from "../assets/images/th (4).jpeg";
+import img1 from "../assets/IMAGES/th (1).jpeg";
+import img2 from "../assets/IMAGES/Wooden-Furniture-Chair-PNG-Image.png";
+import img3 from "../assets/IMAGES/thumb-1920-740968.jpg";
+import img4 from "../assets/IMAGES/Desktop-Floor-Pictures.jpg";
+import img5 from "../assets/IMAGES/2076241.webp";
+import img6 from "../assets/IMAGES/th (3).jpeg";
+import img7 from "../assets/IMAGES/th.jpeg";
+import img8 from "../assets/IMAGES/th (4).jpeg";
 
 const TrendingSales = () => {
     return (

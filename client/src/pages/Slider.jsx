@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 
-import img3 from "../assets/images/WhatsApp Image 2025-03-01 at 6.49.38 PM.jpeg";
-import img2 from "../assets/images/thumb-1920-602300.jpg";
-import img1 from "../assets/images/Desktop-Floor-Pictures.jpg";
+import img3 from "../assets/IMAGES/WhatsApp Image 2025-03-01 at 6.49.38 PM.jpeg";
+import img2 from "../assets/IMAGES/thumb-1920-602300.jpg";
+import img1 from "../assets/IMAGES/Desktop-Floor-Pictures.jpg";
 
 const Slider = () => {
     const slides = [img1, img2, img3, img1];
