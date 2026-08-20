@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
+import Location from "./components/Location"
 import Home from "./pages/Home";
 import CouchSection from "./pages/CouchSection";
 import ChairSection from "./pages/ChairSection";
@@ -17,7 +18,7 @@ function App() {
   return (
     <BrowserRouter>
       <Navbar />
-
+      
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/sofa" element={<CouchSection />} />
@@ -31,8 +32,10 @@ function App() {
         <Route path="/interior" element={<InteriorSection/>} />
         <Route path="/bath" element={<ModernBathSection/>} />
         <Route path="/crockery" element={<CrockerySection/>} />
+        
       </Routes>
-      
+
+      <Location/>
     </BrowserRouter>
   );
 }
