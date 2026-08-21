@@ -29,8 +29,8 @@ const ChairSection = () => {
           </div>
           <div className="lower">
             <h3>Jensen Dining Table Set <i className="fa-regular fa-heart" style={{ marginLeft: "200px" }}></i></h3>
-            <h2>&#8377;15000</h2>
-            <p className="cut">&#8377;18000</p>
+            <h2>&#8377;15,000</h2>
+            <p className="cut">&#8377;18,000</p>
             <p className="off">17% OFF</p>
             <br /><br />
             <button type="submit">Buy Now</button>
@@ -45,8 +45,8 @@ const ChairSection = () => {
           </div>
           <div className="lower">
             <h3>Dining Room Table Set <i className="fa-regular fa-heart" style={{ marginLeft: "210px" }}></i></h3>
-            <h2>&#8377;20000</h2>
-            <p className="cut">&#8377;23000</p>
+            <h2>&#8377;20,000</h2>
+            <p className="cut">&#8377;23,000</p>
             <p className="off">13% OFF</p>
             <br /><br />
             <button type="submit">Buy Now</button>
@@ -61,8 +61,8 @@ const ChairSection = () => {
           </div>
           <div className="lower">
             <h3>Luxe Round Glass Dining Set <i className="fa-regular fa-heart" style={{ marginLeft: "160px" }}></i></h3>
-            <h2>&#8377;35000</h2>
-            <p className="cut">&#8377;38000</p>
+            <h2>&#8377;35,000</h2>
+            <p className="cut">&#8377;38,000</p>
             <p className="off">8% OFF</p>
             <br /><br />
             <button type="submit">Buy Now</button>
@@ -81,8 +81,8 @@ const ChairSection = () => {
           </div>
           <div className="lower">
             <h3>Outdoor Patio Dining Table Set <i className="fa-regular fa-heart" style={{ marginLeft: "140px" }}></i></h3>
-            <h2>&#8377;43000</h2>
-            <p className="cut">&#8377;46000</p>
+            <h2>&#8377;43,000</h2>
+            <p className="cut">&#8377;46,000</p>
             <p className="off">7% OFF</p>
             <br /><br />
             <button type="submit">Buy Now</button>
@@ -97,8 +97,8 @@ const ChairSection = () => {
           </div>
           <div className="lower">
             <h3>Premium Kitchen Table Set <i className="fa-regular fa-heart" style={{ marginLeft: "170px" }}></i></h3>
-            <h2>&#8377;54000</h2>
-            <p className="cut">&#8377;57000</p>
+            <h2>&#8377;54,000</h2>
+            <p className="cut">&#8377;57,000</p>
             <p className="off">5% OFF</p>
             <br /><br />
             <button type="submit">Buy Now</button>
@@ -113,8 +113,8 @@ const ChairSection = () => {
           </div>
           <div className="lower">
             <h3>Luxury Room Chairs <i className="fa-regular fa-heart" style={{ marginLeft: "220px" }}></i></h3>
-            <h2>&#8377;71000</h2>
-            <p className="cut">&#8377;74000</p>
+            <h2>&#8377;71,000</h2>
+            <p className="cut">&#8377;74,000</p>
             <p className="off">4% OFF</p>
             <br /><br />
             <button type="submit">Buy Now</button>
@@ -134,8 +134,8 @@ const ChairSection = () => {
           </div>
           <div className="lower">
             <h3>Grey Modern Chairs <i className="fa-regular fa-heart" style={{ marginLeft: "230px" }}></i></h3>
-            <h2>&#8377;61000</h2>
-            <p className="cut">&#8377;64000</p>
+            <h2>&#8377;61,000</h2>
+            <p className="cut">&#8377;64,000</p>
             <p className="off">5% OFF</p>
             <br /><br />
             <button type="submit">Buy Now</button>
@@ -150,8 +150,8 @@ const ChairSection = () => {
           </div>
           <div className="lower">
             <h3>Classic Dining Chair Set <i className="fa-regular fa-heart" style={{ marginLeft: "200px" }}></i></h3>
-            <h2>&#8377;38000</h2>
-            <p className="cut">&#8377;41000</p>
+            <h2>&#8377;38,000</h2>
+            <p className="cut">&#8377;41,000</p>
             <p className="off">7% OFF</p>
             <br /><br />
             <button type="submit">Buy Now</button>
@@ -166,8 +166,8 @@ const ChairSection = () => {
           </div>
           <div className="lower">
             <h3>Casa Padrino Luxus Dining Set<i className="fa-regular fa-heart" style={{ marginLeft: "150px" }}></i></h3>
-            <h2>&#8377;44000</h2>
-            <p className="cut">&#8377;47000</p>
+            <h2>&#8377;44,000</h2>
+            <p className="cut">&#8377;47,000</p>
             <p className="off">6% OFF</p>
             <br /><br />
             <button type="submit">Buy Now</button>
@@ -187,8 +187,8 @@ const ChairSection = () => {
           </div>
           <div className="lower">
             <h3>Quilted Modern Bistro Set <i className="fa-regular fa-heart" style={{ marginLeft: "180px" }}></i></h3>
-            <h2>&#8377;13000</h2>
-            <p className="cut">&#8377;16000</p>
+            <h2>&#8377;13,000</h2>
+            <p className="cut">&#8377;16,000</p>
             <p className="off">19% OFF</p>
             <br /><br />
             <button type="submit">Buy Now</button>
@@ -203,8 +203,8 @@ const ChairSection = () => {
           </div>
           <div className="lower">
             <h3>Al Fresco 8-Seater Patio Set <i className="fa-regular fa-heart" style={{ marginLeft: "170px" }}></i></h3>
-            <h2>&#8377;32000</h2>
-            <p className="cut">&#8377;35000</p>
+            <h2>&#8377;32,000</h2>
+            <p className="cut">&#8377;35,000</p>
             <p className="off">9% OFF</p>
             <br /><br />
             <button type="submit">Buy Now</button>
@@ -219,8 +219,8 @@ const ChairSection = () => {
           </div>
           <div className="lower">
             <h3>Luxe Braided Bar Stool Set <i className="fa-regular fa-heart" style={{ marginLeft: "170px" }}></i></h3>
-            <h2>&#8377;16000</h2>
-            <p className="cut">&#8377;19000</p>
+            <h2>&#8377;16,000</h2>
+            <p className="cut">&#8377;19,000</p>
             <p className="off">16% OFF</p>
             <br /><br />
             <button type="submit">Buy Now</button>
@@ -241,8 +241,8 @@ const ChairSection = () => {
           </div>
           <div className="lower">
             <h3>Imperial Marble Dining Set <i className="fa-regular fa-heart" style={{ marginLeft: "170px" }}></i></h3>
-            <h2>&#8377;34000</h2>
-            <p className="cut">&#8377;37000</p>
+            <h2>&#8377;34,000</h2>
+            <p className="cut">&#8377;37,000</p>
             <p className="off">8% OFF</p>
             <br /><br />
             <button type="submit">Buy Now</button>
@@ -257,8 +257,8 @@ const ChairSection = () => {
           </div>
           <div className="lower">
             <h3>Office Premium Comfy Set <i className="fa-regular fa-heart" style={{ marginLeft: "180px" }}></i></h3>
-            <h2>&#8377;62000</h2>
-            <p className="cut">&#8377;65000</p>
+            <h2>&#8377;62,000</h2>
+            <p className="cut">&#8377;65,000</p>
             <p className="off">5% OFF</p>
             <br /><br />
             <button type="submit">Buy Now</button>
@@ -273,8 +273,8 @@ const ChairSection = () => {
           </div>
           <div className="lower">
             <h3>Blueish Clinic Chair Set <i className="fa-regular fa-heart" style={{ marginLeft: "200px" }}></i></h3>
-            <h2>&#8377;29000</h2>
-            <p className="cut">&#8377;32000</p>
+            <h2>&#8377;29,000</h2>
+            <p className="cut">&#8377;32,000</p>
             <p className="off">9% OFF</p>
             <br /><br />
             <button type="submit">Buy Now</button>

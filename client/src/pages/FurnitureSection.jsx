@@ -60,18 +60,7 @@ const FurnitureSection = () => {
           <p>Storage</p>
         </div>
 
-        <div className="icon-box" onClick={() => navigate("/door")}>
-          <div className="first">
-            <i
-              className="fa-solid fa-door-open"
-              style={{
-                fontSize: "48px",
-                color: "#8b5e3c"
-              }}
-            ></i>
-          </div>
-          <p>Doors</p>
-        </div>
+    
 
         <div className="icon-box" onClick={() =>navigate("/bed")}>
           <div className="first">
@@ -86,31 +75,6 @@ const FurnitureSection = () => {
           <p>Beds</p>
         </div>
 
-        <div className="icon-box" onClick={()=>navigate("/clock")}>
-          <div className="first">
-            <i
-              className="fa-solid fa-clock"
-              style={{
-                fontSize: "50px",
-                color: "rgb(86,86,175)"
-              }}
-            ></i>
-          </div>
-          <p>Clocks</p>
-        </div>
-
-        <div className="icon-box" onClick={()=>navigate("/shelves")}>
-          <div className="first">
-            <i
-              className="fa-solid fa-book"
-              style={{
-                fontSize: "48px",
-                color: "#555"
-              }}
-            ></i>
-          </div>
-          <p>Shelves</p>
-        </div>
 
         <div className="icon-box" onClick={()=>navigate("/interior")}>
           <div className="first">
@@ -137,6 +101,21 @@ const FurnitureSection = () => {
           </div>
           <p>Modern Bath</p>
         </div>
+
+
+        <div className="icon-box" onClick={()=>navigate("/clock")}>
+          <div className="first">
+            <i
+              className="fa-solid fa-clock"
+              style={{
+                fontSize: "50px",
+                color: "rgb(86,86,175)"
+              }}
+            ></i>
+          </div>
+          <p>Clocks</p>
+        </div>
+        
 
         <div className="icon-box" onClick={()=>navigate("/crockery")}>
           <div className="first">
