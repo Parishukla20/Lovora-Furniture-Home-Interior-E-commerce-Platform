@@ -9,10 +9,10 @@ import img8 from "../assets/IMAGES/Crockery8.jpg";
 import img9 from "../assets/IMAGES/Crockery9.webp";
 import img10 from "../assets/IMAGES/Crockery10.avif";
 import img11 from "../assets/IMAGES/Crockery12.webp";
-import img12 from "../assets/IMAGES/Bath14.jpg";
-import img13 from "../assets/IMAGES/Bath12.avif";
-import img14 from "../assets/IMAGES/Bath16.jpg";
-import img15 from "../assets/IMAGES/Bath15.avif";
+import img12 from "../assets/IMAGES/Crockery11.webp";
+import img13 from "../assets/IMAGES/Crockery13.webp";
+import img14 from "../assets/IMAGES/Crockery14.webp";
+import img15 from "../assets/IMAGES/Crockery15.jpg";
 
 const CrockerySection = () => {
     return (
@@ -28,9 +28,9 @@ const CrockerySection = () => {
                         <img src={img1} alt="img loading" />
                     </div>
                     <div className="lower">
-                        <h3>Countertop Ceramic Basin Set <i className="fa-regular fa-heart" style={{ marginLeft: "150px" }}></i></h3>
-                        <h2>&#8377;2,904</h2>
-                        <p className="cut">&#8377;3,499</p>
+                        <h3>Blue Floral Opalware Dinner Set <i className="fa-regular fa-heart" style={{ marginLeft: "130px" }}></i></h3>
+                        <h2>&#8377;3,319</h2>
+                        <p className="cut">&#8377;3,999</p>
                         <p className="off">17% OFF</p>
                         <br /><br />
                         <button type="submit">Buy Now</button>
@@ -44,9 +44,9 @@ const CrockerySection = () => {
                         <img src={img2} alt="img loading" />
                     </div>
                     <div className="lower">
-                        <h3>Grey Vanity Cabinet <i className="fa-regular fa-heart" style={{ marginLeft: "230px" }}></i></h3>
-                        <h2>&#8377;10,439</h2>
-                        <p className="cut">&#8377;11,999</p>
+                        <h3>Water Pitcher with Glasses Set <i className="fa-regular fa-heart" style={{ marginLeft: "150px" }}></i></h3>
+                        <h2>&#8377;2,174</h2>
+                        <p className="cut">&#8377;2,499</p>
                         <p className="off">13% OFF</p>
                         <br /><br />
                         <button type="submit">Buy Now</button>
@@ -60,7 +60,7 @@ const CrockerySection = () => {
                         <img src={img3} alt="img loading" />
                     </div>
                     <div className="lower">
-                        <h3>Round Backlit LED Mirror <i className="fa-regular fa-heart" style={{ marginLeft: "180px" }}></i></h3>
+                        <h3>Royal Gold China Dinnerware Set <i className="fa-regular fa-heart" style={{ marginLeft: "120px" }}></i></h3>
                         <h2>&#8377;4,139</h2>
                         <p className="cut">&#8377;4,499</p>
                         <p className="off">8% OFF</p>
@@ -80,9 +80,9 @@ const CrockerySection = () => {
                         <img src={img4} alt="img loading" />
                     </div>
                     <div className="lower">
-                        <h3>Digital Shower Panel <i className="fa-regular fa-heart" style={{ marginLeft: "225px" }}></i></h3>
-                        <h2>&#8377;39,989</h2>
-                        <p className="cut">&#8377;42,999</p>
+                        <h3>Airtight Fridge Storage Container Set <i className="fa-regular fa-heart" style={{ marginLeft: "90px" }}></i></h3>
+                        <h2>&#8377;1,208</h2>
+                        <p className="cut">&#8377;1,299</p>
                         <p className="off">7% OFF</p>
                         <br /><br />
                         <button type="submit">Buy Now</button>
@@ -96,7 +96,7 @@ const CrockerySection = () => {
                         <img src={img5} alt="img loading" />
                     </div>
                     <div className="lower">
-                        <h3>Steel Mixer Faucet <i className="fa-regular fa-heart" style={{ marginLeft: "240px" }}></i></h3>
+                        <h3>Floral Ceramic Dinner Plate Set <i className="fa-regular fa-heart" style={{ marginLeft: "135px" }}></i></h3>
                         <h2>&#8377;4,749</h2>
                         <p className="cut">&#8377;4,999</p>
                         <p className="off">5% OFF</p>
@@ -112,9 +112,9 @@ const CrockerySection = () => {
                         <img src={img6} alt="img loading" />
                     </div>
                     <div className="lower">
-                        <h3>Modern Jacuzzi Tub <i className="fa-regular fa-heart" style={{ marginLeft: "230px" }}></i></h3>
-                        <h2>&#8377;1,20,000</h2>
-                        <p className="cut">&#8377;1,25,000</p>
+                        <h3>Pull-Out Cabinet Plate Organizer <i className="fa-regular fa-heart" style={{ marginLeft: "120px" }}></i></h3>
+                        <h2>&#8377;4,799</h2>
+                        <p className="cut">&#8377;4,999</p>
                         <p className="off">4% OFF</p>
                         <br /><br />
                         <button type="submit">Buy Now</button>
@@ -133,9 +133,9 @@ const CrockerySection = () => {
                         <img src={img7} alt="img loading" />
                     </div>
                     <div className="lower">
-                        <h3>Sleek Ceramic One-Piece Commode <i className="fa-regular fa-heart" style={{ marginLeft: "100px" }}></i></h3>
-                        <h2>&#8377;12,349</h2>
-                        <p className="cut">&#8377;12,999</p>
+                        <h3>Pastel Floral Ceramic Mugs <i className="fa-regular fa-heart" style={{ marginLeft: "165px" }}></i></h3>
+                        <h2>&#8377;2,374</h2>
+                        <p className="cut">&#8377;2,499</p>
                         <p className="off">5% OFF</p>
                         <br /><br />
                         <button type="submit">Buy Now</button>
@@ -149,9 +149,9 @@ const CrockerySection = () => {
                         <img src={img8} alt="img loading" />
                     </div>
                     <div className="lower">
-                        <h3>Backlit Niche Shelf Vanity <i className="fa-regular fa-heart" style={{ marginLeft: "180px" }}></i></h3>
-                        <h2>&#8377;17,669</h2>
-                        <p className="cut">&#8377;18,999</p>
+                        <h3>Crystal Glass Champagne Set <i className="fa-regular fa-heart" style={{ marginLeft: "150px" }}></i></h3>
+                        <h2>&#8377;3,254</h2>
+                        <p className="cut">&#8377;3,499</p>
                         <p className="off">7% OFF</p>
                         <br /><br />
                         <button type="submit">Buy Now</button>
@@ -165,9 +165,9 @@ const CrockerySection = () => {
                         <img src={img9} alt="img loading" />
                     </div>
                     <div className="lower">
-                        <h3>Automatic Washing Machine <i className="fa-regular fa-heart" style={{ marginLeft: "160px" }}></i></h3>
-                        <h2>&#8377;36,659</h2>
-                        <p className="cut">&#8377;38,999</p>
+                        <h3>Premium Stainless Steel Fork Set <i className="fa-regular fa-heart" style={{ marginLeft: "120px" }}></i></h3>
+                        <h2>&#8377;1,879</h2>
+                        <p className="cut">&#8377;1,999</p>
                         <p className="off">6% OFF</p>
                         <br /><br />
                         <button type="submit">Buy Now</button>
@@ -186,9 +186,9 @@ const CrockerySection = () => {
                         <img src={img10} alt="img loading" />
                     </div>
                     <div className="lower">
-                        <h3>Washroom Glass Seperater <i className="fa-regular fa-heart" style={{ marginLeft: "170px" }}></i></h3>
-                        <h2>&#8377;13,000</h2>
-                        <p className="cut">&#8377;16,000</p>
+                        <h3>Floral Print Ceramic Bowls <i className="fa-regular fa-heart" style={{ marginLeft: "170px" }}></i></h3>
+                        <h2>&#8377;2,429</h2>
+                        <p className="cut">&#8377;2,999</p>
                         <p className="off">19% OFF</p>
                         <br /><br />
                         <button type="submit">Buy Now</button>
@@ -202,9 +202,9 @@ const CrockerySection = () => {
                         <img src={img11} alt="img loading" />
                     </div>
                     <div className="lower">
-                        <h3>High-Pressure Overhead Shower <i className="fa-regular fa-heart" style={{ marginLeft: "130px" }}></i></h3>
-                        <h2>&#8377;7,279</h2>
-                        <p className="cut">&#8377;7,999</p>
+                        <h3>Stainless Steel Grinder Jars Set <i className="fa-regular fa-heart" style={{ marginLeft: "140px" }}></i></h3>
+                        <h2>&#8377;4,549</h2>
+                        <p className="cut">&#8377;4,999</p>
                         <p className="off">9% OFF</p>
                         <br /><br />
                         <button type="submit">Buy Now</button>
@@ -218,9 +218,9 @@ const CrockerySection = () => {
                         <img src={img12} alt="img loading" />
                     </div>
                     <div className="lower">
-                        <h3>Wall-Mount Corner Caddy Shelf <i className="fa-regular fa-heart" style={{ marginLeft: "130px" }}></i></h3>
-                        <h2>&#8377;1,234</h2>
-                        <p className="cut">&#8377;1,299</p>
+                        <h3>White Ceramic Teapot & Cup Set <i className="fa-regular fa-heart" style={{ marginLeft: "120px" }}></i></h3>
+                        <h2>&#8377;2,849</h2>
+                        <p className="cut">&#8377;2,999</p>
                         <p className="off">5% OFF</p>
                         <br /><br />
                         <button type="submit">Buy Now</button>
@@ -240,9 +240,9 @@ const CrockerySection = () => {
                         <img src={img13} alt="img loading" />
                     </div>
                     <div className="lower">
-                        <h3>Multi-Mode Removeable Shower <i className="fa-regular fa-heart" style={{ marginLeft: "125px" }}></i></h3>
-                        <h2>&#8377;1,379</h2>
-                        <p className="cut">&#8377;1,499</p>
+                        <h3>Royal Blue & Gold Porcelain Dinner Set <i className="fa-regular fa-heart" style={{ marginLeft: "70px" }}></i></h3>
+                        <h2>&#8377;22,999</h2>
+                        <p className="cut">&#8377;24,999</p>
                         <p className="off">8% OFF</p>
                         <br /><br />
                         <button type="submit">Buy Now</button>
@@ -256,9 +256,9 @@ const CrockerySection = () => {
                         <img src={img14} alt="img loading" />
                     </div>
                     <div className="lower">
-                        <h3>Frosted Glass Shower Door <i className="fa-regular fa-heart" style={{ marginLeft: "170px" }}></i></h3>
-                        <h2>&#8377;23,749</h2>
-                        <p className="cut">&#8377;24,999</p>
+                        <h3>Premium Crystal Wine Glass Set <i className="fa-regular fa-heart" style={{ marginLeft: "130px" }}></i></h3>
+                        <h2>&#8377;6,649</h2>
+                        <p className="cut">&#8377;6,999</p>
                         <p className="off">5% OFF</p>
                         <br /><br />
                         <button type="submit">Buy Now</button>
@@ -272,9 +272,9 @@ const CrockerySection = () => {
                         <img src={img15} alt="img loading" />
                     </div>
                     <div className="lower">
-                        <h3>Automatic Jet Hand Dryer <i className="fa-regular fa-heart" style={{ marginLeft: "175px" }}></i></h3>
-                        <h2>&#8377;8,189</h2>
-                        <p className="cut">&#8377;8,999</p>
+                        <h3>Luxury Embossed White Dinnerware Set <i className="fa-regular fa-heart" style={{ marginLeft: "60px" }}></i></h3>
+                        <h2>&#8377;14,559</h2>
+                        <p className="cut">&#8377;15,999</p>
                         <p className="off">9% OFF</p>
                         <br /><br />
                         <button type="submit">Buy Now</button>
