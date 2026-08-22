@@ -456,7 +456,6 @@ body::-webkit-scrollbar {
     height: 50%;
     width: 100%;
     position: relative;
-    /* overflow: hidden; */
 }
 
 .side-up img,
@@ -714,7 +713,6 @@ body::-webkit-scrollbar {
     font-size: 20px;
     margin: 0;
     z-index: 2;
-    /* overlay ke upar text */
 }
 
 
