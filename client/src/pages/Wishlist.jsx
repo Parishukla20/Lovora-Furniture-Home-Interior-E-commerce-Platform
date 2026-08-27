@@ -3,7 +3,6 @@ import { useWishlist } from "./WishlistContext";
 
 const Wishlist = () => {
     const { wishlist, toggleWishlist } = useWishlist();
-
     return (
         <div>
             <div className="heads">
@@ -48,5 +47,4 @@ const Wishlist = () => {
         </div>
     );
 };
-
 export default Wishlist;

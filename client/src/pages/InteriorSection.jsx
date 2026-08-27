@@ -318,9 +318,7 @@ const InteriorSection = () => {
                         <button type="submit">Add to Cart</button>
                     </div>
                 </div>
-
             </div>
-
 
 
             <div className="cards-one">
