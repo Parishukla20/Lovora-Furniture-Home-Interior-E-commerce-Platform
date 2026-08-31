@@ -1,6 +1,6 @@
 import React from "react";
 import { useWishlist } from "./WishlistContext";
-
+import { useCart } from "./CartContext";
 import img1 from "../assets/IMAGES/2076143.webp";
 import img2 from "../assets/IMAGES/unique-living-room-furniture-2-750x563.jpg";
 import img3 from "../assets/IMAGES/813AzaDU-nL.jpg";
@@ -19,7 +19,7 @@ import img15 from "../assets/IMAGES/Better-Homes-Gardens-River-Oaks-3-Piece-Sofa
 
 const CouchSection = () => {
     const { toggleWishlist, isWishlisted } = useWishlist();
-
+    const { addToCart, removeFromCart, isInCart } = useCart();
     const p1 = { id: 1, name: "Cozy Egg Lounge Chair", img: img1, price: 15000, cutPrice: 18000, discount: "17% OFF", margin: "200px" };
     const p2 = { id: 2, name: "Modern Accent Sofa", img: img2, price: 20000, cutPrice: 23000, discount: "13% OFF", margin: "230px" };
     const p3 = { id: 3, name: "Premium Barrel Chair Set", img: img3, price: 35000, cutPrice: 38000, discount: "8% OFF", margin: "180px" };
@@ -49,9 +49,9 @@ const CouchSection = () => {
                         <img src={img1} alt="img loading" />
                     </div>
                     <div className="lower">
-                        <h3>Cozy Egg Lounge Chair 
-                            <i 
-                                className={isWishlisted(p1.id) ? "fa-solid fa-heart" : "fa-regular fa-heart"} 
+                        <h3>Cozy Egg Lounge Chair
+                            <i
+                                className={isWishlisted(p1.id) ? "fa-solid fa-heart" : "fa-regular fa-heart"}
                                 style={{ marginLeft: "200px", color: isWishlisted(p1.id) ? "red" : "inherit", cursor: "pointer" }}
                                 onClick={() => toggleWishlist(p1)}
                             ></i>
@@ -64,7 +64,18 @@ const CouchSection = () => {
                         <button type="button" onClick={() => toggleWishlist(p1)}>
                             {isWishlisted(p1.id) ? "Remove Wishlist" : "Wishlist"}
                         </button>
-                        <button type="submit">Add to Cart</button>
+                        <button
+                            type="button"
+                            onClick={() => {
+                                if (isInCart(p1.id)) {
+                                    removeFromCart(p1.id);
+                                } else {
+                                    addToCart(p1);
+                                }
+                            }}
+                        >
+                            {isInCart(p1.id) ? "Remove from Cart" : "Add to Cart"}
+                        </button>
                     </div>
                 </div>
 
@@ -73,9 +84,9 @@ const CouchSection = () => {
                         <img src={img2} alt="img loading" />
                     </div>
                     <div className="lower">
-                        <h3>Modern Accent Sofa 
-                            <i 
-                                className={isWishlisted(p2.id) ? "fa-solid fa-heart" : "fa-regular fa-heart"} 
+                        <h3>Modern Accent Sofa
+                            <i
+                                className={isWishlisted(p2.id) ? "fa-solid fa-heart" : "fa-regular fa-heart"}
                                 style={{ marginLeft: "230px", color: isWishlisted(p2.id) ? "red" : "inherit", cursor: "pointer" }}
                                 onClick={() => toggleWishlist(p2)}
                             ></i>
@@ -88,7 +99,18 @@ const CouchSection = () => {
                         <button type="button" onClick={() => toggleWishlist(p2)}>
                             {isWishlisted(p2.id) ? "Remove Wishlist" : "Wishlist"}
                         </button>
-                        <button type="submit">Add to Cart</button>
+                        <button
+                            type="button"
+                            onClick={() => {
+                                if (isInCart(p2.id)) {
+                                    removeFromCart(p2.id);
+                                } else {
+                                    addToCart(p2);
+                                }
+                            }}
+                        >
+                            {isInCart(p2.id) ? "Remove from Cart" : "Add to Cart"}
+                        </button>
                     </div>
                 </div>
 
@@ -97,9 +119,9 @@ const CouchSection = () => {
                         <img src={img3} alt="img loading" />
                     </div>
                     <div className="lower">
-                        <h3>Premium Barrel Chair Set 
-                            <i 
-                                className={isWishlisted(p3.id) ? "fa-solid fa-heart" : "fa-regular fa-heart"} 
+                        <h3>Premium Barrel Chair Set
+                            <i
+                                className={isWishlisted(p3.id) ? "fa-solid fa-heart" : "fa-regular fa-heart"}
                                 style={{ marginLeft: "180px", color: isWishlisted(p3.id) ? "red" : "inherit", cursor: "pointer" }}
                                 onClick={() => toggleWishlist(p3)}
                             ></i>
@@ -112,7 +134,18 @@ const CouchSection = () => {
                         <button type="button" onClick={() => toggleWishlist(p3)}>
                             {isWishlisted(p3.id) ? "Remove Wishlist" : "Wishlist"}
                         </button>
-                        <button type="submit">Add to Cart</button>
+                        <button
+                            type="button"
+                            onClick={() => {
+                                if (isInCart(p3.id)) {
+                                    removeFromCart(p3.id);
+                                } else {
+                                    addToCart(p3);
+                                }
+                            }}
+                        >
+                            {isInCart(p3.id) ? "Remove from Cart" : "Add to Cart"}
+                        </button>
                     </div>
                 </div>
             </div>
@@ -124,9 +157,9 @@ const CouchSection = () => {
                         <img src={img4} alt="img loading" />
                     </div>
                     <div className="lower">
-                        <h3>Sky Blue L-Shaped Sofa 
-                            <i 
-                                className={isWishlisted(p4.id) ? "fa-solid fa-heart" : "fa-regular fa-heart"} 
+                        <h3>Sky Blue L-Shaped Sofa
+                            <i
+                                className={isWishlisted(p4.id) ? "fa-solid fa-heart" : "fa-regular fa-heart"}
                                 style={{ marginLeft: "200px", color: isWishlisted(p4.id) ? "red" : "inherit", cursor: "pointer" }}
                                 onClick={() => toggleWishlist(p4)}
                             ></i>
@@ -139,7 +172,18 @@ const CouchSection = () => {
                         <button type="button" onClick={() => toggleWishlist(p4)}>
                             {isWishlisted(p4.id) ? "Remove Wishlist" : "Wishlist"}
                         </button>
-                        <button type="submit">Add to Cart</button>
+                        <button
+                            type="button"
+                            onClick={() => {
+                                if (isInCart(p4.id)) {
+                                    removeFromCart(p4.id);
+                                } else {
+                                    addToCart(p4);
+                                }
+                            }}
+                        >
+                            {isInCart(p4.id) ? "Remove from Cart" : "Add to Cart"}
+                        </button>
                     </div>
                 </div>
 
@@ -148,9 +192,9 @@ const CouchSection = () => {
                         <img src={img5} alt="img loading" />
                     </div>
                     <div className="lower">
-                        <h3>Urban Corner Sectional Sofa 
-                            <i 
-                                className={isWishlisted(p5.id) ? "fa-solid fa-heart" : "fa-regular fa-heart"} 
+                        <h3>Urban Corner Sectional Sofa
+                            <i
+                                className={isWishlisted(p5.id) ? "fa-solid fa-heart" : "fa-regular fa-heart"}
                                 style={{ marginLeft: "160px", color: isWishlisted(p5.id) ? "red" : "inherit", cursor: "pointer" }}
                                 onClick={() => toggleWishlist(p5)}
                             ></i>
@@ -163,7 +207,18 @@ const CouchSection = () => {
                         <button type="button" onClick={() => toggleWishlist(p5)}>
                             {isWishlisted(p5.id) ? "Remove Wishlist" : "Wishlist"}
                         </button>
-                        <button type="submit">Add to Cart</button>
+                        <button
+                            type="button"
+                            onClick={() => {
+                                if (isInCart(p5.id)) {
+                                    removeFromCart(p5.id);
+                                } else {
+                                    addToCart(p5);
+                                }
+                            }}
+                        >
+                            {isInCart(p5.id) ? "Remove from Cart" : "Add to Cart"}
+                        </button>
                     </div>
                 </div>
 
@@ -172,9 +227,9 @@ const CouchSection = () => {
                         <img src={img6} alt="img loading" />
                     </div>
                     <div className="lower">
-                        <h3>Luxe Comfort Sofa Set 
-                            <i 
-                                className={isWishlisted(p6.id) ? "fa-solid fa-heart" : "fa-regular fa-heart"} 
+                        <h3>Luxe Comfort Sofa Set
+                            <i
+                                className={isWishlisted(p6.id) ? "fa-solid fa-heart" : "fa-regular fa-heart"}
                                 style={{ marginLeft: "210px", color: isWishlisted(p6.id) ? "red" : "inherit", cursor: "pointer" }}
                                 onClick={() => toggleWishlist(p6)}
                             ></i>
@@ -187,7 +242,18 @@ const CouchSection = () => {
                         <button type="button" onClick={() => toggleWishlist(p6)}>
                             {isWishlisted(p6.id) ? "Remove Wishlist" : "Wishlist"}
                         </button>
-                        <button type="submit">Add to Cart</button>
+                        <button
+                            type="button"
+                            onClick={() => {
+                                if (isInCart(p6.id)) {
+                                    removeFromCart(p6.id);
+                                } else {
+                                    addToCart(p6);
+                                }
+                            }}
+                        >
+                            {isInCart(p6.id) ? "Remove from Cart" : "Add to Cart"}
+                        </button>
                     </div>
                 </div>
             </div>
@@ -199,9 +265,9 @@ const CouchSection = () => {
                         <img src={img7} alt="img loading" />
                     </div>
                     <div className="lower">
-                        <h3>Grey Modern Sofa 
-                            <i 
-                                className={isWishlisted(p7.id) ? "fa-solid fa-heart" : "fa-regular fa-heart"} 
+                        <h3>Grey Modern Sofa
+                            <i
+                                className={isWishlisted(p7.id) ? "fa-solid fa-heart" : "fa-regular fa-heart"}
                                 style={{ marginLeft: "240px", color: isWishlisted(p7.id) ? "red" : "inherit", cursor: "pointer" }}
                                 onClick={() => toggleWishlist(p7)}
                             ></i>
@@ -214,7 +280,18 @@ const CouchSection = () => {
                         <button type="button" onClick={() => toggleWishlist(p7)}>
                             {isWishlisted(p7.id) ? "Remove Wishlist" : "Wishlist"}
                         </button>
-                        <button type="submit">Add to Cart</button>
+                        <button
+                            type="button"
+                            onClick={() => {
+                                if (isInCart(p7.id)) {
+                                    removeFromCart(p7.id);
+                                } else {
+                                    addToCart(p7);
+                                }
+                            }}
+                        >
+                            {isInCart(p7.id) ? "Remove from Cart" : "Add to Cart"}
+                        </button>
                     </div>
                 </div>
 
@@ -223,9 +300,9 @@ const CouchSection = () => {
                         <img src={img8} alt="img loading" />
                     </div>
                     <div className="lower">
-                        <h3>Contemporary Curved Sofa 
-                            <i 
-                                className={isWishlisted(p8.id) ? "fa-solid fa-heart" : "fa-regular fa-heart"} 
+                        <h3>Contemporary Curved Sofa
+                            <i
+                                className={isWishlisted(p8.id) ? "fa-solid fa-heart" : "fa-regular fa-heart"}
                                 style={{ marginLeft: "170px", color: isWishlisted(p8.id) ? "red" : "inherit", cursor: "pointer" }}
                                 onClick={() => toggleWishlist(p8)}
                             ></i>
@@ -238,7 +315,18 @@ const CouchSection = () => {
                         <button type="button" onClick={() => toggleWishlist(p8)}>
                             {isWishlisted(p8.id) ? "Remove Wishlist" : "Wishlist"}
                         </button>
-                        <button type="submit">Add to Cart</button>
+                        <button
+                            type="button"
+                            onClick={() => {
+                                if (isInCart(p8.id)) {
+                                    removeFromCart(p8.id);
+                                } else {
+                                    addToCart(p8);
+                                }
+                            }}
+                        >
+                            {isInCart(p8.id) ? "Remove from Cart" : "Add to Cart"}
+                        </button>
                     </div>
                 </div>
 
@@ -247,10 +335,10 @@ const CouchSection = () => {
                         <img src={img9} alt="img loading" />
                     </div>
                     <div className="lower">
-                        <h3>Luxury Curved Corner Sofa 
-                            <i 
-                                className={isWishlisted(p9.id) ? "fa-solid fa-heart" : "fa-regular fa-heart"} 
-                                style={{ marginLeft: "170px", color: isWishlisted(p9.id) ? "red" : "inherit", cursor: "pointer" }}
+                        <h3>Luxury Curved Corner Sofa
+                            <i
+                                className={isWishlisted(p9.id) ? "fa-solid fa-heart" : "fa-regular fa-heart"}
+                                style={{ marginLeft: "165px", color: isWishlisted(p9.id) ? "red" : "inherit", cursor: "pointer" }}
                                 onClick={() => toggleWishlist(p9)}
                             ></i>
                         </h3>
@@ -262,7 +350,18 @@ const CouchSection = () => {
                         <button type="button" onClick={() => toggleWishlist(p9)}>
                             {isWishlisted(p9.id) ? "Remove Wishlist" : "Wishlist"}
                         </button>
-                        <button type="submit">Add to Cart</button>
+                        <button
+                            type="button"
+                            onClick={() => {
+                                if (isInCart(p9.id)) {
+                                    removeFromCart(p9.id);
+                                } else {
+                                    addToCart(p9);
+                                }
+                            }}
+                        >
+                            {isInCart(p9.id) ? "Remove from Cart" : "Add to Cart"}
+                        </button>
                     </div>
                 </div>
             </div>
@@ -274,9 +373,9 @@ const CouchSection = () => {
                         <img src={img10} alt="img loading" />
                     </div>
                     <div className="lower">
-                        <h3>Woven Nest Chair 
-                            <i 
-                                className={isWishlisted(p10.id) ? "fa-solid fa-heart" : "fa-regular fa-heart"} 
+                        <h3>Woven Nest Chair
+                            <i
+                                className={isWishlisted(p10.id) ? "fa-solid fa-heart" : "fa-regular fa-heart"}
                                 style={{ marginLeft: "240px", color: isWishlisted(p10.id) ? "red" : "inherit", cursor: "pointer" }}
                                 onClick={() => toggleWishlist(p10)}
                             ></i>
@@ -289,7 +388,18 @@ const CouchSection = () => {
                         <button type="button" onClick={() => toggleWishlist(p10)}>
                             {isWishlisted(p10.id) ? "Remove Wishlist" : "Wishlist"}
                         </button>
-                        <button type="submit">Add to Cart</button>
+                        <button
+                            type="button"
+                            onClick={() => {
+                                if (isInCart(p10.id)) {
+                                    removeFromCart(p10.id);
+                                } else {
+                                    addToCart(p10);
+                                }
+                            }}
+                        >
+                            {isInCart(p10.id) ? "Remove from Cart" : "Add to Cart"}
+                        </button>
                     </div>
                 </div>
 
@@ -298,9 +408,9 @@ const CouchSection = () => {
                         <img src={img11} alt="img loading" />
                     </div>
                     <div className="lower">
-                        <h3>Minimal White Sofa 
-                            <i 
-                                className={isWishlisted(p11.id) ? "fa-solid fa-heart" : "fa-regular fa-heart"} 
+                        <h3>Minimal White Sofa
+                            <i
+                                className={isWishlisted(p11.id) ? "fa-solid fa-heart" : "fa-regular fa-heart"}
                                 style={{ marginLeft: "230px", color: isWishlisted(p11.id) ? "red" : "inherit", cursor: "pointer" }}
                                 onClick={() => toggleWishlist(p11)}
                             ></i>
@@ -313,7 +423,18 @@ const CouchSection = () => {
                         <button type="button" onClick={() => toggleWishlist(p11)}>
                             {isWishlisted(p11.id) ? "Remove Wishlist" : "Wishlist"}
                         </button>
-                        <button type="submit">Add to Cart</button>
+                        <button
+                            type="button"
+                            onClick={() => {
+                                if (isInCart(p11.id)) {
+                                    removeFromCart(p11.id);
+                                } else {
+                                    addToCart(p11);
+                                }
+                            }}
+                        >
+                            {isInCart(p11.id) ? "Remove from Cart" : "Add to Cart"}
+                        </button>
                     </div>
                 </div>
 
@@ -322,9 +443,9 @@ const CouchSection = () => {
                         <img src={img12} alt="img loading" />
                     </div>
                     <div className="lower">
-                        <h3>Kids Cozy Sofa 
-                            <i 
-                                className={isWishlisted(p12.id) ? "fa-solid fa-heart" : "fa-regular fa-heart"} 
+                        <h3>Kids Cozy Sofa
+                            <i
+                                className={isWishlisted(p12.id) ? "fa-solid fa-heart" : "fa-regular fa-heart"}
                                 style={{ marginLeft: "270px", color: isWishlisted(p12.id) ? "red" : "inherit", cursor: "pointer" }}
                                 onClick={() => toggleWishlist(p12)}
                             ></i>
@@ -337,7 +458,18 @@ const CouchSection = () => {
                         <button type="button" onClick={() => toggleWishlist(p12)}>
                             {isWishlisted(p12.id) ? "Remove Wishlist" : "Wishlist"}
                         </button>
-                        <button type="submit">Add to Cart</button>
+                        <button
+                            type="button"
+                            onClick={() => {
+                                if (isInCart(p12.id)) {
+                                    removeFromCart(p12.id);
+                                } else {
+                                    addToCart(p12);
+                                }
+                            }}
+                        >
+                            {isInCart(p12.id) ? "Remove from Cart" : "Add to Cart"}
+                        </button>
                     </div>
                 </div>
             </div>
@@ -349,9 +481,9 @@ const CouchSection = () => {
                         <img src={img13} alt="img loading" />
                     </div>
                     <div className="lower">
-                        <h3>Modern Accent Sofa 
-                            <i 
-                                className={isWishlisted(p13.id) ? "fa-solid fa-heart" : "fa-regular fa-heart"} 
+                        <h3>Modern Accent Sofa
+                            <i
+                                className={isWishlisted(p13.id) ? "fa-solid fa-heart" : "fa-regular fa-heart"}
                                 style={{ marginLeft: "230px", color: isWishlisted(p13.id) ? "red" : "inherit", cursor: "pointer" }}
                                 onClick={() => toggleWishlist(p13)}
                             ></i>
@@ -364,7 +496,18 @@ const CouchSection = () => {
                         <button type="button" onClick={() => toggleWishlist(p13)}>
                             {isWishlisted(p13.id) ? "Remove Wishlist" : "Wishlist"}
                         </button>
-                        <button type="submit">Add to Cart</button>
+                        <button
+                            type="button"
+                            onClick={() => {
+                                if (isInCart(p13.id)) {
+                                    removeFromCart(p13.id);
+                                } else {
+                                    addToCart(p13);
+                                }
+                            }}
+                        >
+                            {isInCart(p13.id) ? "Remove from Cart" : "Add to Cart"}
+                        </button>
                     </div>
                 </div>
 
@@ -373,9 +516,9 @@ const CouchSection = () => {
                         <img src={img14} alt="img loading" />
                     </div>
                     <div className="lower">
-                        <h3>Outdoor Patio Sofa Set 
-                            <i 
-                                className={isWishlisted(p14.id) ? "fa-solid fa-heart" : "fa-regular fa-heart"} 
+                        <h3>Outdoor Patio Sofa Set
+                            <i
+                                className={isWishlisted(p14.id) ? "fa-solid fa-heart" : "fa-regular fa-heart"}
                                 style={{ marginLeft: "210px", color: isWishlisted(p14.id) ? "red" : "inherit", cursor: "pointer" }}
                                 onClick={() => toggleWishlist(p14)}
                             ></i>
@@ -388,7 +531,18 @@ const CouchSection = () => {
                         <button type="button" onClick={() => toggleWishlist(p14)}>
                             {isWishlisted(p14.id) ? "Remove Wishlist" : "Wishlist"}
                         </button>
-                        <button type="submit">Add to Cart</button>
+                        <button
+                            type="button"
+                            onClick={() => {
+                                if (isInCart(p14.id)) {
+                                    removeFromCart(p14.id);
+                                } else {
+                                    addToCart(p14);
+                                }
+                            }}
+                        >
+                            {isInCart(p14.id) ? "Remove from Cart" : "Add to Cart"}
+                        </button>
                     </div>
                 </div>
 
@@ -397,10 +551,10 @@ const CouchSection = () => {
                         <img src={img15} alt="img loading" />
                     </div>
                     <div className="lower">
-                        <h3>Garden Wicker Sofa 
-                            <i 
-                                className={isWishlisted(p15.id) ? "fa-solid fa-heart" : "fa-regular fa-heart"} 
-                                style={{ marginLeft: "220px", color: isWishlisted(p15.id) ? "red" : "inherit", cursor: "pointer" }}
+                        <h3>Garden Wicker Sofa
+                            <i
+                                className={isWishlisted(p15.id) ? "fa-solid fa-heart" : "fa-regular fa-heart"}
+                                style={{ marginLeft: "230px", color: isWishlisted(p15.id) ? "red" : "inherit", cursor: "pointer" }}
                                 onClick={() => toggleWishlist(p15)}
                             ></i>
                         </h3>
@@ -412,7 +566,18 @@ const CouchSection = () => {
                         <button type="button" onClick={() => toggleWishlist(p15)}>
                             {isWishlisted(p15.id) ? "Remove Wishlist" : "Wishlist"}
                         </button>
-                        <button type="submit">Add to Cart</button>
+                        <button
+                            type="button"
+                            onClick={() => {
+                                if (isInCart(p15.id)) {
+                                    removeFromCart(p15.id);
+                                } else {
+                                    addToCart(p15);
+                                }
+                            }}
+                        >
+                            {isInCart(p15.id) ? "Remove from Cart" : "Add to Cart"}
+                        </button>
                     </div>
                 </div>
             </div>

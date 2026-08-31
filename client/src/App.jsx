@@ -13,10 +13,13 @@ import ModernBathSection from "./pages/ModernBathSection";
 import InteriorSection from "./pages/InteriorSection";
 import CrockerySection from "./pages/CrockerySection";
 import Wishlist from "./pages/Wishlist";
+import { CartProvider } from "./pages/CartContext";
+import Cart from "./pages/Cart";
 
 function App() {
   return (
     <WishlistProvider>
+      <CartProvider>
       <BrowserRouter>
         <Navbar />
         
@@ -32,10 +35,12 @@ function App() {
           <Route path="/bath" element={<ModernBathSection />} />
           <Route path="/crockery" element={<CrockerySection />} />
           <Route path="/wishlist" element={<Wishlist />} />
+          <Route path="/cart" element={<Cart/>} />
         </Routes>
 
         <Location />
       </BrowserRouter>
+      </CartProvider>
     </WishlistProvider>
   );
 }

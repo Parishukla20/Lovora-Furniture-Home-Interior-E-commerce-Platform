@@ -1,9 +1,10 @@
+import { useNavigate } from "react-router-dom";
 import img1 from "../assets/IMAGES/thumb-1920-740968.jpg";
 import img2 from "../assets/IMAGES/617220-furniture-interior-design-living-room-living-room.jpg";
 import img3 from "../assets/IMAGES/Versace-Home-Medusa-95-sofa_06.jpg";
 
-
 const Beautify = () => {
+    const navigate = useNavigate();
     return (
         <>
             <div
@@ -26,7 +27,7 @@ const Beautify = () => {
                             style, and sophistication to your everyday living.
                         </p>
 
-                        <button>Explore Collection</button>
+                        <button onClick={() =>navigate("/bed")}>Explore Collection</button>
                     </div>
                 </div>
 
@@ -42,7 +43,7 @@ const Beautify = () => {
                             furniture that perfectly blends luxury and functionality.
                         </p>
 
-                        <button>Shop Now</button>
+                        <button onClick={()=>navigate("/interior")}>Shop Now</button>
                     </div>
                 </div>
 
@@ -58,7 +59,7 @@ const Beautify = () => {
                             with premium quality, modern design, and lasting elegance.
                         </p>
 
-                        <button>View Products</button>
+                        <button onClick={() => navigate("/sofa")}>View Products</button>
                     </div>
                 </div>
             </div>

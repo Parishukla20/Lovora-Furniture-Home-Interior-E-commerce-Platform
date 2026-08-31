@@ -1,5 +1,6 @@
 import React from "react";
 import { useWishlist } from "./WishlistContext";
+import { useCart } from "./CartContext";
 import img1 from "../assets/IMAGES/Clock1.jpg";
 import img2 from "../assets/IMAGES/Clock2.jpg";
 import img3 from "../assets/IMAGES/Clock3.jpg";
@@ -17,6 +18,7 @@ import img14 from "../assets/IMAGES/Clock14.jpg";
 import img15 from "../assets/IMAGES/Clock15.jpg";
 const ClockSection = () => {
     const { toggleWishlist, isWishlisted } = useWishlist();
+    const { addToCart, removeFromCart, isInCart } = useCart();
         const p1 = { id: 61, name: "Gold Mirrored Roman Wall Clock", img: img1, price: 3319, cutPrice: 3999, discount: "17% OFF" };
         const p2 = { id: 62, name: "Digital Wall Clock with Ambient LED", img: img2, price: 3044, cutPrice: 3499, discount: "13% OFF" };
         const p3 = { id: 63, name: "Smart Bedside Display Speaker Clock", img: img3, price: 6439, cutPrice: 6999, discount: "8% OFF" };
@@ -58,7 +60,18 @@ const ClockSection = () => {
                         <button type="button" onClick={() => toggleWishlist(p1)}>
                             {isWishlisted(p1.id) ? "Remove Wishlist" : "Wishlist"}
                         </button>
-                        <button type="submit">Add to Cart</button>
+                        <button
+                            type="button"
+                            onClick={() => {
+                                if (isInCart(p1.id)) {
+                                    removeFromCart(p1.id);
+                                } else {
+                                    addToCart(p1);
+                                }
+                            }}
+                        >
+                            {isInCart(p1.id) ? "Remove from Cart" : "Add to Cart"}
+                        </button>
                     </div>
                 </div>
 
@@ -80,7 +93,18 @@ const ClockSection = () => {
                         <button type="button" onClick={() => toggleWishlist(p2)}>
                             {isWishlisted(p2.id) ? "Remove Wishlist" : "Wishlist"}
                         </button>
-                        <button type="submit">Add to Cart</button>
+                        <button
+                            type="button"
+                            onClick={() => {
+                                if (isInCart(p2.id)) {
+                                    removeFromCart(p2.id);
+                                } else {
+                                    addToCart(p2);
+                                }
+                            }}
+                        >
+                            {isInCart(p2.id) ? "Remove from Cart" : "Add to Cart"}
+                        </button>
                     </div>
                 </div>
 
@@ -102,7 +126,18 @@ const ClockSection = () => {
                         <button type="button" onClick={() => toggleWishlist(p3)}>
                             {isWishlisted(p3.id) ? "Remove Wishlist" : "Wishlist"}
                         </button>
-                        <button type="submit">Add to Cart</button>
+                        <button
+                            type="button"
+                            onClick={() => {
+                                if (isInCart(p3.id)) {
+                                    removeFromCart(p3.id);
+                                } else {
+                                    addToCart(p3);
+                                }
+                            }}
+                        >
+                            {isInCart(p3.id) ? "Remove from Cart" : "Add to Cart"}
+                        </button>
                     </div>
                 </div>
 
@@ -128,7 +163,18 @@ const ClockSection = () => {
                         <button type="button" onClick={() => toggleWishlist(p4)}>
                             {isWishlisted(p4.id) ? "Remove Wishlist" : "Wishlist"}
                         </button>
-                        <button type="submit">Add to Cart</button>
+                        <button
+                            type="button"
+                            onClick={() => {
+                                if (isInCart(p4.id)) {
+                                    removeFromCart(p4.id);
+                                } else {
+                                    addToCart(p4);
+                                }
+                            }}
+                        >
+                            {isInCart(p4.id) ? "Remove from Cart" : "Add to Cart"}
+                        </button>
                     </div>
                 </div>
 
@@ -150,7 +196,18 @@ const ClockSection = () => {
                         <button type="button" onClick={() => toggleWishlist(p5)}>
                             {isWishlisted(p5.id) ? "Remove Wishlist" : "Wishlist"}
                         </button>
-                        <button type="submit">Add to Cart</button>
+                        <button
+                            type="button"
+                            onClick={() => {
+                                if (isInCart(p5.id)) {
+                                    removeFromCart(p5.id);
+                                } else {
+                                    addToCart(p5);
+                                }
+                            }}
+                        >
+                            {isInCart(p5.id) ? "Remove from Cart" : "Add to Cart"}
+                        </button>
                     </div>
                 </div>
 
@@ -172,7 +229,18 @@ const ClockSection = () => {
                         <button type="button" onClick={() => toggleWishlist(p6)}>
                             {isWishlisted(p6.id) ? "Remove Wishlist" : "Wishlist"}
                         </button>
-                        <button type="submit">Add to Cart</button>
+                        <button
+                            type="button"
+                            onClick={() => {
+                                if (isInCart(p6.id)) {
+                                    removeFromCart(p6.id);
+                                } else {
+                                    addToCart(p6);
+                                }
+                            }}
+                        >
+                            {isInCart(p6.id) ? "Remove from Cart" : "Add to Cart"}
+                        </button>
                     </div>
                 </div>
 
@@ -199,7 +267,18 @@ const ClockSection = () => {
                         <button type="button" onClick={() => toggleWishlist(p7)}>
                             {isWishlisted(p7.id) ? "Remove Wishlist" : "Wishlist"}
                         </button>
-                        <button type="submit">Add to Cart</button>
+                        <button
+                            type="button"
+                            onClick={() => {
+                                if (isInCart(p7.id)) {
+                                    removeFromCart(p7.id);
+                                } else {
+                                    addToCart(p7);
+                                }
+                            }}
+                        >
+                            {isInCart(p7.id) ? "Remove from Cart" : "Add to Cart"}
+                        </button>
                     </div>
                 </div>
 
@@ -221,7 +300,18 @@ const ClockSection = () => {
                         <button type="button" onClick={() => toggleWishlist(p8)}>
                             {isWishlisted(p8.id) ? "Remove Wishlist" : "Wishlist"}
                         </button>
-                        <button type="submit">Add to Cart</button>
+                        <button
+                            type="button"
+                            onClick={() => {
+                                if (isInCart(p8.id)) {
+                                    removeFromCart(p8.id);
+                                } else {
+                                    addToCart(p8);
+                                }
+                            }}
+                        >
+                            {isInCart(p8.id) ? "Remove from Cart" : "Add to Cart"}
+                        </button>
                     </div>
                 </div>
 
@@ -243,7 +333,18 @@ const ClockSection = () => {
                         <button type="button" onClick={() => toggleWishlist(p9)}>
                             {isWishlisted(p9.id) ? "Remove Wishlist" : "Wishlist"}
                         </button>
-                        <button type="submit">Add to Cart</button>
+                        <button
+                            type="button"
+                            onClick={() => {
+                                if (isInCart(p9.id)) {
+                                    removeFromCart(p9.id);
+                                } else {
+                                    addToCart(p9);
+                                }
+                            }}
+                        >
+                            {isInCart(p9.id) ? "Remove from Cart" : "Add to Cart"}
+                        </button>
                     </div>
                 </div>
 
@@ -270,7 +371,18 @@ const ClockSection = () => {
                         <button type="button" onClick={() => toggleWishlist(p10)}>
                             {isWishlisted(p10.id) ? "Remove Wishlist" : "Wishlist"}
                         </button>
-                        <button type="submit">Add to Cart</button>
+                        <button
+                            type="button"
+                            onClick={() => {
+                                if (isInCart(p10.id)) {
+                                    removeFromCart(p10.id);
+                                } else {
+                                    addToCart(p10);
+                                }
+                            }}
+                        >
+                            {isInCart(p10.id) ? "Remove from Cart" : "Add to Cart"}
+                        </button>
                     </div>
                 </div>
 
@@ -292,7 +404,18 @@ const ClockSection = () => {
                         <button type="button" onClick={() => toggleWishlist(p11)}>
                             {isWishlisted(p11.id) ? "Remove Wishlist" : "Wishlist"}
                         </button>
-                        <button type="submit">Add to Cart</button>
+                        <button
+                            type="button"
+                            onClick={() => {
+                                if (isInCart(p11.id)) {
+                                    removeFromCart(p11.id);
+                                } else {
+                                    addToCart(p11);
+                                }
+                            }}
+                        >
+                            {isInCart(p11.id) ? "Remove from Cart" : "Add to Cart"}
+                        </button>
                     </div>
                 </div>
 
@@ -314,7 +437,18 @@ const ClockSection = () => {
                         <button type="button" onClick={() => toggleWishlist(p12)}>
                             {isWishlisted(p12.id) ? "Remove Wishlist" : "Wishlist"}
                         </button>
-                        <button type="submit">Add to Cart</button>
+                        <button
+                            type="button"
+                            onClick={() => {
+                                if (isInCart(p12.id)) {
+                                    removeFromCart(p12.id);
+                                } else {
+                                    addToCart(p12);
+                                }
+                            }}
+                        >
+                            {isInCart(p12.id) ? "Remove from Cart" : "Add to Cart"}
+                        </button>
                     </div>
                 </div>
 
@@ -342,7 +476,18 @@ const ClockSection = () => {
                         <button type="button" onClick={() => toggleWishlist(p13)}>
                             {isWishlisted(p13.id) ? "Remove Wishlist" : "Wishlist"}
                         </button>
-                        <button type="submit">Add to Cart</button>
+                        <button
+                            type="button"
+                            onClick={() => {
+                                if (isInCart(p13.id)) {
+                                    removeFromCart(p13.id);
+                                } else {
+                                    addToCart(p13);
+                                }
+                            }}
+                        >
+                            {isInCart(p13.id) ? "Remove from Cart" : "Add to Cart"}
+                        </button>
                     </div>
                 </div>
 
@@ -364,7 +509,18 @@ const ClockSection = () => {
                         <button type="button" onClick={() => toggleWishlist(p14)}>
                             {isWishlisted(p14.id) ? "Remove Wishlist" : "Wishlist"}
                         </button>
-                        <button type="submit">Add to Cart</button>
+                        <button
+                            type="button"
+                            onClick={() => {
+                                if (isInCart(p14.id)) {
+                                    removeFromCart(p14.id);
+                                } else {
+                                    addToCart(p14);
+                                }
+                            }}
+                        >
+                            {isInCart(p14.id) ? "Remove from Cart" : "Add to Cart"}
+                        </button>
                     </div>
                 </div>
 
@@ -386,7 +542,18 @@ const ClockSection = () => {
                         <button type="button" onClick={() => toggleWishlist(p15)}>
                             {isWishlisted(p15.id) ? "Remove Wishlist" : "Wishlist"}
                         </button>
-                        <button type="submit">Add to Cart</button>
+                        <button
+                            type="button"
+                            onClick={() => {
+                                if (isInCart(p15.id)) {
+                                    removeFromCart(p15.id);
+                                } else {
+                                    addToCart(p15);
+                                }
+                            }}
+                        >
+                            {isInCart(p15.id) ? "Remove from Cart" : "Add to Cart"}
+                        </button>
                     </div>
                 </div>
             </div>

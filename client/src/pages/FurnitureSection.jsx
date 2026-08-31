@@ -181,13 +181,13 @@ const FurnitureSection = () => {
             <img src={img1} alt="" />
             <h2>Modern Living Room</h2>
             <p>Timeless furniture designed to elevate every corner of your home.</p>
-            <button className="explore-more">Explore More <i className="fa-solid fa-arrow-right"></i></button>
+            <button className="explore-more" onClick={() =>navigate("/bed")}>Explore More <i className="fa-solid fa-arrow-right"></i></button>
           </div>
           <div className="side-down">
             <img src={img2} alt="" />
             <h2>Modern Kitchen Essentials</h2>
             <p>Beautiful interiors with smart storage and elegant finishes.</p>
-            <button className="shop-now">Shop Now <i className="fa-solid fa-arrow-right"></i></button>
+            <button className="shop-now" onClick={()=>navigate("/crockery")}>Shop Now <i className="fa-solid fa-arrow-right"></i></button>
           </div>
         </div>
       </div>

@@ -44,7 +44,7 @@ const TrendingSales = () => {
                             Buy me !
                         </button>
                         <button id="but">Flat 70% OFF</button>
-                        <h3>Modern Luxury Bedroom</h3>
+                        <h3>Modern Luxury Bed</h3>
                     </div>
                 </div>
 
