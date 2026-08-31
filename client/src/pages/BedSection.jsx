@@ -56,7 +56,7 @@ const BedSection = () => {
             <h2>&#8377;32,999</h2>
             <p className="cut">&#8377;38,999</p>
             <p className="off">15% OFF</p>
-            <br /><br />
+            <br />
             <button type="submit">Buy Now</button>
             <button type="button" onClick={() => toggleWishlist(p1)}>
               {isWishlisted(p1.id) ? "Remove Wishlist" : "Wishlist"}
@@ -89,7 +89,7 @@ const BedSection = () => {
             <h2>&#8377;74,999</h2>
             <p className="cut">&#8377;89,999</p>
             <p className="off">17% OFF</p>
-            <br /><br />
+            <br />
             <button type="submit">Buy Now</button>
             <button type="button" onClick={() => toggleWishlist(p2)}>
               {isWishlisted(p2.id) ? "Remove Wishlist" : "Wishlist"}
@@ -122,7 +122,7 @@ const BedSection = () => {
             <h2>&#8377;48,999</h2>
             <p className="cut">&#8377;56,999</p>
             <p className="off">14% OFF</p>
-            <br /><br />
+            <br />
             <button type="submit">Buy Now</button>
             <button type="button" onClick={() => toggleWishlist(p3)}>
               {isWishlisted(p3.id) ? "Remove Wishlist" : "Wishlist"}
@@ -159,7 +159,7 @@ const BedSection = () => {
             <h2>&#8377;92,999</h2>
             <p className="cut">&#8377;1,09,999</p>
             <p className="off">15% OFF</p>
-            <br /><br />
+            <br />
             <button type="submit">Buy Now</button>
             <button type="button" onClick={() => toggleWishlist(p4)}>
               {isWishlisted(p4.id) ? "Remove Wishlist" : "Wishlist"}
@@ -192,7 +192,7 @@ const BedSection = () => {
             <h2>&#8377;41,999</h2>
             <p className="cut">&#8377;49,999</p>
             <p className="off">16% OFF</p>
-            <br /><br />
+            <br />
             <button type="submit">Buy Now</button>
             <button type="button" onClick={() => toggleWishlist(p5)}>
               {isWishlisted(p5.id) ? "Remove Wishlist" : "Wishlist"}
@@ -225,7 +225,7 @@ const BedSection = () => {
             <h2>&#8377;79,999</h2>
             <p className="cut">&#8377;94,999</p>
             <p className="off">16% OFF</p>
-            <br /><br />
+            <br />
             <button type="submit">Buy Now</button>
             <button type="button" onClick={() => toggleWishlist(p6)}>
               {isWishlisted(p6.id) ? "Remove Wishlist" : "Wishlist"}
@@ -263,7 +263,7 @@ const BedSection = () => {
             <h2>&#8377;69,999</h2>
             <p className="cut">&#8377;82,999</p>
             <p className="off">16% OFF</p>
-            <br /><br />
+            <br />
             <button type="submit">Buy Now</button>
             <button type="button" onClick={() => toggleWishlist(p7)}>
               {isWishlisted(p7.id) ? "Remove Wishlist" : "Wishlist"}
@@ -296,7 +296,7 @@ const BedSection = () => {
             <h2>&#8377;1,29,999</h2>
             <p className="cut">&#8377;1,49,999</p>
             <p className="off">13% OFF</p>
-            <br /><br />
+            <br />
             <button type="submit">Buy Now</button>
             <button type="button" onClick={() => toggleWishlist(p8)}>
               {isWishlisted(p8.id) ? "Remove Wishlist" : "Wishlist"}
@@ -329,7 +329,7 @@ const BedSection = () => {
             <h2>&#8377;52,999</h2>
             <p className="cut">&#8377;61,999</p>
             <p className="off">15% OFF</p>
-            <br /><br />
+            <br />
             <button type="submit">Buy Now</button>
             <button type="button" onClick={() => toggleWishlist(p9)}>
               {isWishlisted(p9.id) ? "Remove Wishlist" : "Wishlist"}
@@ -367,7 +367,7 @@ const BedSection = () => {
             <h2>&#8377;18,999</h2>
             <p className="cut">&#8377;22,999</p>
             <p className="off">17% OFF</p>
-            <br /><br />
+            <br />
             <button type="submit">Buy Now</button>
             <button type="button" onClick={() => toggleWishlist(p10)}>
               {isWishlisted(p10.id) ? "Remove Wishlist" : "Wishlist"}
@@ -400,7 +400,7 @@ const BedSection = () => {
             <h2>&#8377;54,999</h2>
             <p className="cut">&#8377;64,999</p>
             <p className="off">15% OFF</p>
-            <br /><br />
+            <br />
             <button type="submit">Buy Now</button>
             <button type="button" onClick={() => toggleWishlist(p11)}>
               {isWishlisted(p11.id) ? "Remove Wishlist" : "Wishlist"}
@@ -433,7 +433,7 @@ const BedSection = () => {
             <h2>&#8377;44,999</h2>
             <p className="cut">&#8377;52,999</p>
             <p className="off">15% OFF</p>
-            <br /><br />
+            <br />
             <button type="submit">Buy Now</button>
             <button type="button" onClick={() => toggleWishlist(p12)}>
               {isWishlisted(p12.id) ? "Remove Wishlist" : "Wishlist"}
@@ -471,7 +471,7 @@ const BedSection = () => {
             <h2>&#8377;34000</h2>
             <p className="cut">&#8377;37000</p>
             <p className="off">8% OFF</p>
-            <br /><br />
+            <br />
             <button type="submit">Buy Now</button>
             <button type="button" onClick={() => toggleWishlist(p13)}>
               {isWishlisted(p13.id) ? "Remove Wishlist" : "Wishlist"}
@@ -504,7 +504,7 @@ const BedSection = () => {
             <h2>&#8377;62000</h2>
             <p className="cut">&#8377;65000</p>
             <p className="off">5% OFF</p>
-            <br /><br />
+            <br />
             <button type="submit">Buy Now</button>
             <button type="button" onClick={() => toggleWishlist(p14)}>
               {isWishlisted(p14.id) ? "Remove Wishlist" : "Wishlist"}
@@ -537,7 +537,7 @@ const BedSection = () => {
             <h2>&#8377;29000</h2>
             <p className="cut">&#8377;32000</p>
             <p className="off">9% OFF</p>
-            <br /><br />
+            <br />
             <button type="submit">Buy Now</button>
             <button type="button" onClick={() => toggleWishlist(p15)}>
               {isWishlisted(p15.id) ? "Remove Wishlist" : "Wishlist"}

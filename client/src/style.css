@@ -224,7 +224,6 @@ body::-webkit-scrollbar {
     margin: 10px auto;
 }
 
-
 .text {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: 800;
@@ -718,9 +717,10 @@ body::-webkit-scrollbar {
 
 /* COUCH SECTION */
 .cards-one {
-    height: 550px;
+    min-height: 550px;
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 20px;
@@ -742,7 +742,6 @@ body::-webkit-scrollbar {
 .cards .lower {
     height: 30.7%;
     width: 100%;
-    /* border: 1px solid black; */
 }
 
 .upper img {
@@ -766,6 +765,9 @@ body::-webkit-scrollbar {
 .lower h3 ,.lower h2 ,.lower p ,.lower button{
     margin-left: 15px;
 }
+.lower h3 {
+    min-height: 25px;
+}
 .lower h2 , .lower p {
     display: inline;
 }
@@ -783,4 +785,5 @@ body::-webkit-scrollbar {
     background-color: #FCEDEF;
     border: none;
     color: #e80615f7;
+    margin-top: 18px;
 }

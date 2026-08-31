@@ -55,7 +55,7 @@ const ClockSection = () => {
                         <h2>&#8377;3,319</h2>
                         <p className="cut">&#8377;3,999</p>
                         <p className="off">17% OFF</p>
-                        <br /><br />
+                        <br />
                         <button type="submit">Buy Now</button>
                         <button type="button" onClick={() => toggleWishlist(p1)}>
                             {isWishlisted(p1.id) ? "Remove Wishlist" : "Wishlist"}
@@ -88,7 +88,7 @@ const ClockSection = () => {
                         <h2>&#8377;3,044</h2>
                         <p className="cut">&#8377;3,499</p>
                         <p className="off">13% OFF</p>
-                        <br /><br />
+                        <br />
                         <button type="submit">Buy Now</button>
                         <button type="button" onClick={() => toggleWishlist(p2)}>
                             {isWishlisted(p2.id) ? "Remove Wishlist" : "Wishlist"}
@@ -121,7 +121,7 @@ const ClockSection = () => {
                         <h2>&#8377;6,439</h2>
                         <p className="cut">&#8377;6,999</p>
                         <p className="off">8% OFF</p>
-                        <br /><br />
+                        <br />
                         <button type="submit">Buy Now</button>
                         <button type="button" onClick={() => toggleWishlist(p3)}>
                             {isWishlisted(p3.id) ? "Remove Wishlist" : "Wishlist"}
@@ -158,7 +158,7 @@ const ClockSection = () => {
                         <h2>&#8377;35,340</h2>
                         <p className="cut">&#8377;38,000</p>
                         <p className="off">7% OFF</p>
-                        <br /><br />
+                        <br />
                         <button type="submit">Buy Now</button>
                         <button type="button" onClick={() => toggleWishlist(p4)}>
                             {isWishlisted(p4.id) ? "Remove Wishlist" : "Wishlist"}
@@ -191,7 +191,7 @@ const ClockSection = () => {
                         <h2>&#8377;20,900</h2>
                         <p className="cut">&#8377;22,000</p>
                         <p className="off">5% OFF</p>
-                        <br /><br />
+                        <br />
                         <button type="submit">Buy Now</button>
                         <button type="button" onClick={() => toggleWishlist(p5)}>
                             {isWishlisted(p5.id) ? "Remove Wishlist" : "Wishlist"}
@@ -224,7 +224,7 @@ const ClockSection = () => {
                         <h2>&#8377;17,280</h2>
                         <p className="cut">&#8377;18,000</p>
                         <p className="off">4% OFF</p>
-                        <br /><br />
+                        <br />
                         <button type="submit">Buy Now</button>
                         <button type="button" onClick={() => toggleWishlist(p6)}>
                             {isWishlisted(p6.id) ? "Remove Wishlist" : "Wishlist"}
@@ -262,7 +262,7 @@ const ClockSection = () => {
                         <h2>&#8377;2,849</h2>
                         <p className="cut">&#8377;2,999</p>
                         <p className="off">5% OFF</p>
-                        <br /><br />
+                        <br />
                         <button type="submit">Buy Now</button>
                         <button type="button" onClick={() => toggleWishlist(p7)}>
                             {isWishlisted(p7.id) ? "Remove Wishlist" : "Wishlist"}
@@ -295,7 +295,7 @@ const ClockSection = () => {
                         <h2>&#8377;12,089</h2>
                         <p className="cut">&#8377;12,999</p>
                         <p className="off">7% OFF</p>
-                        <br /><br />
+                        <br />
                         <button type="submit">Buy Now</button>
                         <button type="button" onClick={() => toggleWishlist(p8)}>
                             {isWishlisted(p8.id) ? "Remove Wishlist" : "Wishlist"}
@@ -328,7 +328,7 @@ const ClockSection = () => {
                         <h2>&#8377;2,349</h2>
                         <p className="cut">&#8377;2,499</p>
                         <p className="off">6% OFF</p>
-                        <br /><br />
+                        <br />
                         <button type="submit">Buy Now</button>
                         <button type="button" onClick={() => toggleWishlist(p9)}>
                             {isWishlisted(p9.id) ? "Remove Wishlist" : "Wishlist"}
@@ -366,7 +366,7 @@ const ClockSection = () => {
                         <h2>&#8377;14,580</h2>
                         <p className="cut">&#8377;18,000</p>
                         <p className="off">19% OFF</p>
-                        <br /><br />
+                        <br />
                         <button type="submit">Buy Now</button>
                         <button type="button" onClick={() => toggleWishlist(p10)}>
                             {isWishlisted(p10.id) ? "Remove Wishlist" : "Wishlist"}
@@ -399,7 +399,7 @@ const ClockSection = () => {
                         <h2>&#8377;13,650</h2>
                         <p className="cut">&#8377;15,000</p>
                         <p className="off">9% OFF</p>
-                        <br /><br />
+                        <br />
                         <button type="submit">Buy Now</button>
                         <button type="button" onClick={() => toggleWishlist(p11)}>
                             {isWishlisted(p11.id) ? "Remove Wishlist" : "Wishlist"}
@@ -432,7 +432,7 @@ const ClockSection = () => {
                         <h2>&#8377;3,325</h2>
                         <p className="cut">&#8377;3,500</p>
                         <p className="off">5% OFF</p>
-                        <br /><br />
+                        <br />
                         <button type="submit">Buy Now</button>
                         <button type="button" onClick={() => toggleWishlist(p12)}>
                             {isWishlisted(p12.id) ? "Remove Wishlist" : "Wishlist"}
@@ -471,7 +471,7 @@ const ClockSection = () => {
                         <h2>&#8377;9,199</h2>
                         <p className="cut">&#8377;9,999</p>
                         <p className="off">8% OFF</p>
-                        <br /><br />
+                        <br />
                         <button type="submit">Buy Now</button>
                         <button type="button" onClick={() => toggleWishlist(p13)}>
                             {isWishlisted(p13.id) ? "Remove Wishlist" : "Wishlist"}
@@ -504,7 +504,7 @@ const ClockSection = () => {
                         <h2>&#8377;20,900</h2>
                         <p className="cut">&#8377;22,000</p>
                         <p className="off">5% OFF</p>
-                        <br /><br />
+                        <br />
                         <button type="submit">Buy Now</button>
                         <button type="button" onClick={() => toggleWishlist(p14)}>
                             {isWishlisted(p14.id) ? "Remove Wishlist" : "Wishlist"}
@@ -537,7 +537,7 @@ const ClockSection = () => {
                         <h2>&#8377;4,095</h2>
                         <p className="cut">&#8377;4,500</p>
                         <p className="off">9% OFF</p>
-                        <br /><br />
+                        <br />
                         <button type="submit">Buy Now</button>
                         <button type="button" onClick={() => toggleWishlist(p15)}>
                             {isWishlisted(p15.id) ? "Remove Wishlist" : "Wishlist"}

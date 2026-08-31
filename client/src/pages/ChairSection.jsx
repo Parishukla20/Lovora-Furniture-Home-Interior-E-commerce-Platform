@@ -59,7 +59,7 @@ const ChairSection = () => {
                         <h2>&#8377;15,000</h2>
                         <p className="cut">&#8377;18,000</p>
                         <p className="off">17% OFF</p>
-                        <br /><br />
+                        <br />
                         <button type="submit">Buy Now</button>
                         <button type="button" onClick={() => toggleWishlist(p1)}>
                             {isWishlisted(p1.id) ? "Remove Wishlist" : "Wishlist"}
@@ -94,7 +94,7 @@ const ChairSection = () => {
                         <h2>&#8377;20,000</h2>
                         <p className="cut">&#8377;23,000</p>
                         <p className="off">13% OFF</p>
-                        <br /><br />
+                        <br />
                         <button type="submit">Buy Now</button>
                         <button type="button" onClick={() => toggleWishlist(p2)}>
                             {isWishlisted(p2.id) ? "Remove Wishlist" : "Wishlist"}
@@ -129,7 +129,7 @@ const ChairSection = () => {
                         <h2>&#8377;35,000</h2>
                         <p className="cut">&#8377;38,000</p>
                         <p className="off">8% OFF</p>
-                        <br /><br />
+                        <br />
                         <button type="submit">Buy Now</button>
                         <button type="button" onClick={() => toggleWishlist(p3)}>
                             {isWishlisted(p3.id) ? "Remove Wishlist" : "Wishlist"}
@@ -167,7 +167,7 @@ const ChairSection = () => {
                         <h2>&#8377;43,000</h2>
                         <p className="cut">&#8377;46,000</p>
                         <p className="off">7% OFF</p>
-                        <br /><br />
+                        <br />
                         <button type="submit">Buy Now</button>
                         <button type="button" onClick={() => toggleWishlist(p4)}>
                             {isWishlisted(p4.id) ? "Remove Wishlist" : "Wishlist"}
@@ -202,7 +202,7 @@ const ChairSection = () => {
                         <h2>&#8377;54,000</h2>
                         <p className="cut">&#8377;57,000</p>
                         <p className="off">5% OFF</p>
-                        <br /><br />
+                        <br />
                         <button type="submit">Buy Now</button>
                         <button type="button" onClick={() => toggleWishlist(p5)}>
                             {isWishlisted(p5.id) ? "Remove Wishlist" : "Wishlist"}
@@ -237,7 +237,7 @@ const ChairSection = () => {
                         <h2>&#8377;71,000</h2>
                         <p className="cut">&#8377;74,000</p>
                         <p className="off">4% OFF</p>
-                        <br /><br />
+                        <br />
                         <button type="submit">Buy Now</button>
                         <button type="button" onClick={() => toggleWishlist(p6)}>
                             {isWishlisted(p6.id) ? "Remove Wishlist" : "Wishlist"}
@@ -275,7 +275,7 @@ const ChairSection = () => {
                         <h2>&#8377;61,000</h2>
                         <p className="cut">&#8377;64,000</p>
                         <p className="off">5% OFF</p>
-                        <br /><br />
+                        <br />
                         <button type="submit">Buy Now</button>
                         <button type="button" onClick={() => toggleWishlist(p7)}>
                             {isWishlisted(p7.id) ? "Remove Wishlist" : "Wishlist"}
@@ -310,7 +310,7 @@ const ChairSection = () => {
                         <h2>&#8377;38,000</h2>
                         <p className="cut">&#8377;41,000</p>
                         <p className="off">7% OFF</p>
-                        <br /><br />
+                        <br />
                         <button type="submit">Buy Now</button>
                         <button type="button" onClick={() => toggleWishlist(p8)}>
                             {isWishlisted(p8.id) ? "Remove Wishlist" : "Wishlist"}
@@ -345,7 +345,7 @@ const ChairSection = () => {
                         <h2>&#8377;44,000</h2>
                         <p className="cut">&#8377;47,000</p>
                         <p className="off">6% OFF</p>
-                        <br /><br />
+                        <br />
                         <button type="submit">Buy Now</button>
                         <button type="button" onClick={() => toggleWishlist(p9)}>
                             {isWishlisted(p9.id) ? "Remove Wishlist" : "Wishlist"}
@@ -383,7 +383,7 @@ const ChairSection = () => {
                         <h2>&#8377;13,000</h2>
                         <p className="cut">&#8377;16,000</p>
                         <p className="off">19% OFF</p>
-                        <br /><br />
+                        <br />
                         <button type="submit">Buy Now</button>
                         <button type="button" onClick={() => toggleWishlist(p10)}>
                             {isWishlisted(p10.id) ? "Remove Wishlist" : "Wishlist"}
@@ -418,7 +418,7 @@ const ChairSection = () => {
                         <h2>&#8377;32,000</h2>
                         <p className="cut">&#8377;35,000</p>
                         <p className="off">9% OFF</p>
-                        <br /><br />
+                        <br />
                         <button type="submit">Buy Now</button>
                         <button type="button" onClick={() => toggleWishlist(p11)}>
                             {isWishlisted(p11.id) ? "Remove Wishlist" : "Wishlist"}
@@ -453,7 +453,7 @@ const ChairSection = () => {
                         <h2>&#8377;16,000</h2>
                         <p className="cut">&#8377;19,000</p>
                         <p className="off">16% OFF</p>
-                        <br /><br />
+                        <br />
                         <button type="submit">Buy Now</button>
                         <button type="button" onClick={() => toggleWishlist(p12)}>
                             {isWishlisted(p12.id) ? "Remove Wishlist" : "Wishlist"}
@@ -491,7 +491,7 @@ const ChairSection = () => {
                         <h2>&#8377;34,000</h2>
                         <p className="cut">&#8377;37,000</p>
                         <p className="off">8% OFF</p>
-                        <br /><br />
+                        <br />
                         <button type="submit">Buy Now</button>
                         <button type="button" onClick={() => toggleWishlist(p13)}>
                             {isWishlisted(p13.id) ? "Remove Wishlist" : "Wishlist"}
@@ -526,7 +526,7 @@ const ChairSection = () => {
                         <h2>&#8377;62,000</h2>
                         <p className="cut">&#8377;65,000</p>
                         <p className="off">5% OFF</p>
-                        <br /><br />
+                        <br />
                         <button type="submit">Buy Now</button>
                         <button type="button" onClick={() => toggleWishlist(p14)}>
                             {isWishlisted(p14.id) ? "Remove Wishlist" : "Wishlist"}
@@ -561,7 +561,7 @@ const ChairSection = () => {
                         <h2>&#8377;29,000</h2>
                         <p className="cut">&#8377;32,000</p>
                         <p className="off">9% OFF</p>
-                        <br /><br />
+                        <br />
                         <button type="submit">Buy Now</button>
                         <button type="button" onClick={() => toggleWishlist(p15)}>
                             {isWishlisted(p15.id) ? "Remove Wishlist" : "Wishlist"}
