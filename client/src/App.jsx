@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { WishlistProvider } from "./pages/WishlistContext";
 import Navbar from "./components/Navbar";
-import Location from "./components/Location";
+import Location from "./pages/Location";
 import Home from "./pages/Home";
 import CouchSection from "./pages/CouchSection";
 import ChairSection from "./pages/ChairSection";
@@ -15,12 +15,15 @@ import CrockerySection from "./pages/CrockerySection";
 import Wishlist from "./pages/Wishlist";
 import { CartProvider } from "./pages/CartContext";
 import Cart from "./pages/Cart";
+import Signup from "./pages/Signup";
+import ScrollToTop from "./pages/ScrollToTop";
 
 function App() {
   return (
     <WishlistProvider>
       <CartProvider>
       <BrowserRouter>
+        <ScrollToTop/>
         <Navbar />
         
         <Routes>
@@ -36,9 +39,10 @@ function App() {
           <Route path="/crockery" element={<CrockerySection />} />
           <Route path="/wishlist" element={<Wishlist />} />
           <Route path="/cart" element={<Cart/>} />
+          <Route path="/signup" element={<Signup/>} />
         </Routes>
 
-        <Location />
+        {/* <Location /> */}
       </BrowserRouter>
       </CartProvider>
     </WishlistProvider>

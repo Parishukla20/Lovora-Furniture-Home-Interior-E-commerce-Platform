@@ -6,10 +6,6 @@ const Cart = () => {
     const { cart, removeFromCart } = useCart();
     const { toggleWishlist, isWishlisted } = useWishlist();
 
-    const totalPrice = cart.reduce(
-        (total, item) => total + item.price * item.quantity,
-        0
-    );
 
     return (
         <div>

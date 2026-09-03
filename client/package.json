@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "name": "super-comfy",
   "private": true,
   "version": "0.0.0",
@@ -25,5 +26,10 @@
     "eslint-plugin-react-refresh": "^0.5.2",
     "globals": "^17.6.0",
     "vite": "^8.2.0"
+=======
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^7.3.1",
+    "lucide-react": "^1.31.0"
+>>>>>>> 93bbf590435763c91e30b440c50aa6cbc8a58aad
   }
 }
