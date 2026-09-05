@@ -1,7 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { WishlistProvider } from "./pages/WishlistContext";
 import Navbar from "./components/Navbar";
-import Location from "./pages/Location";
 import Home from "./pages/Home";
 import CouchSection from "./pages/CouchSection";
 import ChairSection from "./pages/ChairSection";
@@ -42,7 +41,6 @@ function App() {
           <Route path="/signup" element={<Signup/>} />
         </Routes>
 
-        {/* <Location /> */}
       </BrowserRouter>
       </CartProvider>
     </WishlistProvider>

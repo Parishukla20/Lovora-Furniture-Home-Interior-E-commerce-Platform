@@ -137,7 +137,7 @@ const FurnitureSection = () => {
           <div className="explain">
             <h5>Free Delivery</h5>
             <p>On orders before Rs.999</p>
-            <button className="shop-now">Shop Now <i className="fa-solid fa-arrow-right"></i></button>
+            <button className="shop-now" onClick={()=>navigate("/light")}>Shop Now <i className="fa-solid fa-arrow-right"></i></button>
           </div>
         </div>
         <div className="quality">
