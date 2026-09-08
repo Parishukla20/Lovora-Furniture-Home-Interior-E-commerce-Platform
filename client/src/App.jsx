@@ -16,32 +16,37 @@ import { CartProvider } from "./pages/CartContext";
 import Cart from "./pages/Cart";
 import Signup from "./pages/Signup";
 import ScrollToTop from "./pages/ScrollToTop";
+import Account from "./pages/Account";
+import { AuthProvider } from "./pages/AuthContext";
 
 function App() {
   return (
     <WishlistProvider>
       <CartProvider>
-      <BrowserRouter>
-        <ScrollToTop/>
-        <Navbar />
-        
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/sofa" element={<CouchSection />} />
-          <Route path="/chair" element={<ChairSection />} />
-          <Route path="/light" element={<LightSection />} />
-          <Route path="/storage" element={<StorageSection />} />
-          <Route path="/bed" element={<BedSection />} />
-          <Route path="/clock" element={<ClockSection />} />
-          <Route path="/interior" element={<InteriorSection />} />
-          <Route path="/bath" element={<ModernBathSection />} />
-          <Route path="/crockery" element={<CrockerySection />} />
-          <Route path="/wishlist" element={<Wishlist />} />
-          <Route path="/cart" element={<Cart/>} />
-          <Route path="/signup" element={<Signup/>} />
-        </Routes>
+        <AuthProvider>
+          <BrowserRouter>
+            <ScrollToTop />
+            <Navbar />
 
-      </BrowserRouter>
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/sofa" element={<CouchSection />} />
+              <Route path="/chair" element={<ChairSection />} />
+              <Route path="/light" element={<LightSection />} />
+              <Route path="/storage" element={<StorageSection />} />
+              <Route path="/bed" element={<BedSection />} />
+              <Route path="/clock" element={<ClockSection />} />
+              <Route path="/interior" element={<InteriorSection />} />
+              <Route path="/bath" element={<ModernBathSection />} />
+              <Route path="/crockery" element={<CrockerySection />} />
+              <Route path="/wishlist" element={<Wishlist />} />
+              <Route path="/cart" element={<Cart />} />
+              <Route path="/signup" element={<Signup />} />
+              <Route path="/account" element={<Account />} />
+            </Routes>
+
+          </BrowserRouter>
+        </AuthProvider>
       </CartProvider>
     </WishlistProvider>
   );

@@ -1,9 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { useAuth } from "../pages/AuthContext";
 import "./LoginPopup.css";
 
 const LoginPopup = () => {
     const navigate = useNavigate();
+    const { login } = useAuth();
+    const [loginData, setLoginData] = useState({
+        email: "",
+        password: "",
+    });
     function validateEmail(event) {
         let email = event.target.value;
 
@@ -29,6 +35,40 @@ const LoginPopup = () => {
             event.target.setCustomValidity("");
         }
     }
+
+    function handleChange(event) {
+        setLoginData({
+            ...loginData,
+            [event.target.id]: event.target.value,
+        });
+    }
+
+    async function handleSubmit(event) {
+        event.preventDefault();
+
+        try {
+            const response = await fetch("http://localhost:5000/api/users/login", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify(loginData),
+            });
+
+            const data = await response.json();
+
+            alert(data.message);
+
+            if (response.ok) {
+                // Save JWT Token
+                login(data.token);
+                navigate("/");
+            }
+        } catch (error) {
+            console.log(error);
+            alert("Something went wrong");
+        }
+    }
     return (
         <div className="popup">
 
@@ -36,15 +76,15 @@ const LoginPopup = () => {
 
                 <h1>Login</h1>
 
-                <form>
+                <form onSubmit={handleSubmit}>
 
                     <label htmlFor="email">Enter Email:</label>
-                    <input type="email" id="email" onInput={validateEmail} required/>
+                    <input type="email" id="email" onInput={validateEmail} value={loginData.email} onChange={handleChange} required />
 
                     <label htmlFor="password">Enter Password:</label>
-                    <input type="password" id="password" onInput={validatePass} required/>
+                    <input type="password" id="password" onInput={validatePass} value={loginData.password} onChange={handleChange} required />
 
-                    <button type="submit" onClick={() => navigate("/")}>Login</button>
+                    <button type="submit">Login</button>
 
                     <p>
                         <span>Forgot Password?</span>

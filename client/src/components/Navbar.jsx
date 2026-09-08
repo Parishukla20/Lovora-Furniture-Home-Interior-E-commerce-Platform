@@ -2,12 +2,13 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { useWishlist } from "../pages/WishlistContext";
 import { useCart } from "../pages/CartContext";
+import { useAuth } from "../pages/AuthContext";
 import img1 from "../assets/IMAGES/search.svg";
 
 const Navbar = () => {
   const { wishlist } = useWishlist();
   const { cart } = useCart();
-
+  const { isLoggedIn } = useAuth();
   return (
     <div id="nav">
       <div className="web-name">
@@ -77,7 +78,7 @@ const Navbar = () => {
 
         <div className="acc">
           <Link
-            to="/cart"
+            to={isLoggedIn ? "/account" : "/signup"}
             style={{
               color: "inherit",
               position: "relative",
@@ -88,7 +89,7 @@ const Navbar = () => {
           </Link>
           <p>
             <Link
-              to="/signup"
+              to={isLoggedIn ? "/account" : "/signup"}
               style={{ color: "inherit", textDecoration: "none" }}
             >
               Account

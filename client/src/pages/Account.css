@@ -1,0 +1,142 @@
+.account-page{
+    width:100%;
+    height:120vh;
+    background:#f8f8f8;
+    padding:15px 4% 400px;
+    box-sizing:border-box;
+}
+
+.account-header{
+    display:flex;
+    align-items:center;
+    margin-bottom:15px;
+    margin-left: 20px;
+}
+
+.account-header h1{
+    font-size:42px;
+    color:#3f3f3f;
+}
+
+.profile-circle{
+    width:90px;
+    height:90px;
+    margin-left: 40px;
+    border-radius:50%;
+    background:#efe7eb;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.profile-circle i{
+    font-size:38px;
+    color:#8b4f5d;
+}
+
+.profile-card{
+    background:white;
+    padding:45px;
+    border-radius:15px;
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+    margin-bottom: 10px;
+}
+
+.profile-card h2{
+    margin-bottom:30px;
+    color:#444;
+}
+
+.profile-info{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:20px;
+}
+
+.info-box{
+    display:flex;
+    align-items:center;
+    gap:18px;
+    background:#fafafa;
+    padding:20px;
+    border-radius:12px;
+    border:1px solid #ececec;
+}
+
+.info-box i{
+    width:55px;
+    height:55px;
+    border-radius:50%;
+    background:#efe7eb;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:#8b4f5d;
+    font-size:22px;
+}
+
+.info-box span{
+    color:#888;
+    font-size:14px;
+}
+
+.info-box h4{
+    margin-top:5px;
+    color:#333;
+}
+
+.section-title{
+    margin:45px 0 25px;
+    color:#444;
+}
+
+.action-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.action-card{
+    background:white;
+    border-radius:15px;
+    padding:30px;
+    text-align:center;
+    cursor:pointer;
+    transition:.3s;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+.action-card:hover{
+    transform:translateY(-6px);
+}
+
+.action-card i{
+    font-size:34px;
+    color:#8b4f5d;
+    margin-bottom:18px;
+}
+
+.action-card h3{
+    margin-bottom:10px;
+    color:#333;
+}
+
+.action-card p{
+    color:#777;
+    font-size:15px;
+}
+
+.logout-card{
+    background:#d9534f;
+    color:white;
+}
+
+.logout-card i,
+.logout-card h3,
+.logout-card p{
+    color:white;
+}
+
+.logout-card:hover{
+    background:#c63f3a;
+}

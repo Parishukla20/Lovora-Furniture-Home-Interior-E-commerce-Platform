@@ -5,6 +5,14 @@ import img1 from '../assets/IMAGES/f976673a689a5f7b9a657e2a8486dc70.png';
 
 const Signup = () => {
     const [showLogin, setShowLogin] = useState(false);
+    const [formData, setFormData] = useState({
+        name: "",
+        email: "",
+        phone: "",
+        address: "",
+        createPass: "",
+        confirmPass: "",
+    });
 
     function validateName(event) {
         event.target.value = event.target.value.replace(/[^a-zA-Z\s]/g, "");
@@ -50,7 +58,7 @@ const Signup = () => {
             event.target.setCustomValidity("");
         }
     }
-    
+
     function validateConfirmPass(event) {
         let password = document.getElementById("createPass").value;
         let confirmPassword = event.target.value;
@@ -67,6 +75,51 @@ const Signup = () => {
             event.target.setCustomValidity("");
         }
     }
+
+    function handleChange(event) {
+        setFormData({
+            ...formData,
+            [event.target.id]: event.target.value,
+        });
+    }
+
+    async function handleSubmit(event) {
+        event.preventDefault();
+
+        try {
+            const response = await fetch("http://localhost:5000/api/users/signup", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify({
+                    fullName: formData.name,
+                    email: formData.email,
+                    mobile: formData.phone,
+                    address: formData.address,
+                    password: formData.createPass,
+                }),
+            });
+
+            const data = await response.json();
+
+            alert(data.message);
+
+            if (response.ok) {
+                setFormData({
+                    name: "",
+                    email: "",
+                    phone: "",
+                    address: "",
+                    createPass: "",
+                    confirmPass: "",
+                });
+            }
+        } catch (error) {
+            alert("Something went wrong.");
+            console.log(error);
+        }
+    }
     return (
         <div className="signup">
             <div className="sign-img">
@@ -74,23 +127,23 @@ const Signup = () => {
             </div>
 
             <div className="form">
-                <form>
+                <form onSubmit={handleSubmit}>
                     <h1>Welcome! Create Your Account</h1>
 
                     <label htmlFor="name">Full Name:</label>
-                    <input type="text" id="name" onInput={validateName} required></input>
+                    <input type="text" id="name" onInput={validateName} value={formData.name} onChange={handleChange} required></input>
 
                     <label htmlFor="email">Enter Mail:</label>
-                    <input type="email" id="email" onInput={validateEmail} required />
+                    <input type="email" id="email" onInput={validateEmail} value={formData.email} onChange={handleChange} required />
 
                     <label htmlFor="phone">Enter Mobile No.:</label>
-                    <input type="tel" id="phone" maxLength="10" onInput={validatePhone} required />
+                    <input type="tel" id="phone" maxLength="10" onInput={validatePhone} value={formData.phone} onChange={handleChange} required />
 
                     <label htmlFor="address">Enter Address:</label>
-                    <textarea id="address" rows="4"></textarea>
+                    <textarea id="address" rows="4" value={formData.address} onChange={handleChange}></textarea>
 
                     <label htmlFor="createPass">Create Password:</label>
-                    <input type="password" id="createPass" onInput={validatePass} />
+                    <input type="password" id="createPass" onInput={validatePass} value={formData.createPass} onChange={handleChange} />
 
                     <label htmlFor="confirmPass">Confirm Password:</label>
                     <input type="password" id="confirmPass" onInput={validateConfirmPass} />
@@ -109,5 +162,9 @@ const Signup = () => {
         </div>
     );
 };
-
 export default Signup;
+
+
+
+
+
