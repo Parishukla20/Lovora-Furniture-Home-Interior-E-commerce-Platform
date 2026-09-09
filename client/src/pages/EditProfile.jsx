@@ -60,7 +60,7 @@ const EditProfile = () => {
         const token = localStorage.getItem("token");
 
         const response = await fetch(
-            "http://:5000/api/users/profile",
+            "https://lovora-furniture-home-interior-backend.onrender.com/api/users/profile",
             {
                 method: "PUT",
                 headers: {
