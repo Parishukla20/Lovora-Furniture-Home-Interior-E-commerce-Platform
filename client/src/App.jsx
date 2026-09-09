@@ -18,6 +18,7 @@ import Signup from "./pages/Signup";
 import ScrollToTop from "./pages/ScrollToTop";
 import Account from "./pages/Account";
 import { AuthProvider } from "./pages/AuthContext";
+import EditProfile from "./pages/EditProfile";
 
 function App() {
   return (
@@ -43,6 +44,7 @@ function App() {
               <Route path="/cart" element={<Cart />} />
               <Route path="/signup" element={<Signup />} />
               <Route path="/account" element={<Account />} />
+              <Route path="/edit-profile" element={<EditProfile/>} />
             </Routes>
 
           </BrowserRouter>

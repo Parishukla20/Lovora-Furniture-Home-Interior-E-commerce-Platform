@@ -13,32 +13,32 @@ const Account = () => {
     };
 
     useEffect(() => {
-    const fetchProfile = async () => {
-        try {
-            const token = localStorage.getItem("token");
-            const response = await fetch("https://lovora-furniture-home-interior-backend.onrender.com/api/users/profile", {
-                method: "GET",
-                headers: {
-                    Authorization: token,
-                },
-            });
-            const data = await response.json();
-            if (response.ok) {
-                setUser(data);
-            } else {
-                alert(data.message);
-            }
+        const fetchProfile = async () => {
+            try {
+                const token = localStorage.getItem("token");
+                const response = await fetch("https://lovora-furniture-home-interior-backend.onrender.com/api/users/profile", {
+                    method: "GET",
+                    headers: {
+                        Authorization: token,
+                    },
+                });
+                const data = await response.json();
+                if (response.ok) {
+                    setUser(data);
+                } else {
+                    alert(data.message);
+                }
 
-        } catch (error) {
-            console.log(error);
-        }
-    };
-    fetchProfile();
-}, []);
+            } catch (error) {
+                console.log(error);
+            }
+        };
+        fetchProfile();
+    }, []);
 
     if (!user) {
-    return <h2>Loading...</h2>;
-}
+        return <h2>Loading...</h2>;
+    }
 
     return (
         <div className="account-page">
@@ -98,19 +98,22 @@ const Account = () => {
                     <p>Track your purchases</p>
                 </div>
 
-                <div className="action-card" onClick={() =>navigate("/wishlist")}>
+                <div className="action-card" onClick={() => navigate("/wishlist")}>
                     <i className="fa-solid fa-heart"></i>
                     <h3>Wishlist</h3>
                     <p>Your saved products</p>
                 </div>
 
-                <div className="action-card" onClick={() =>navigate("/cart")}>
+                <div className="action-card" onClick={() => navigate("/cart")}>
                     <i className="fa-solid fa-cart-shopping"></i>
                     <h3>My Cart</h3>
                     <p>View cart items</p>
                 </div>
 
-                <div className="action-card">
+                <div
+                    className="action-card"
+                    onClick={() => navigate("/edit-profile")}
+                >
                     <i className="fa-solid fa-user-pen"></i>
                     <h3>Edit Profile</h3>
                     <p>Update your details</p>

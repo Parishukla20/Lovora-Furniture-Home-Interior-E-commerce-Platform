@@ -98,11 +98,41 @@ const getProfile = async (req, res) => {
     }
 };
 
+const updateProfile = async (req, res) => {
+    try {
+
+        const { fullName, mobile, address } = req.body;
+
+        const user = await User.findById(req.user.userId);
+
+        if (!user) {
+            return res.status(404).json({
+                message: "User not found",
+            });
+        }
+
+        user.fullName = fullName;
+        user.mobile = mobile;
+        user.address = address;
+
+        await user.save();
+
+        res.status(200).json({
+            message: "Profile updated successfully",
+            user,
+        });
+
+    } catch (error) {
+        res.status(500).json({
+            message: error.message,
+        });
+    }
+};
+
+
 module.exports = {
     signupUser,
     loginUser,
     getProfile,
+    updateProfile,
 };
-
-
-//eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2YTlkOTcxZTMzMDYwNmFiMDI2NDQ1ODYiLCJpYXQiOjE3ODg5NDczNTgsImV4cCI6MTc4OTU1MjE1OH0.ZkVlFux4CEt98j0ZSkj_NZuw5sxS72cDcUPvu3t0m7k
