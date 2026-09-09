@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "../pages/AuthContext";
 import "./Account.css";
@@ -6,11 +6,39 @@ import "./Account.css";
 const Account = () => {
     const navigate = useNavigate();
     const { logout } = useAuth();
-
+    const [user, setUser] = useState(null);
     const handleLogout = () => {
         logout();
         navigate("/");
     };
+
+    useEffect(() => {
+    const fetchProfile = async () => {
+        try {
+            const token = localStorage.getItem("token");
+            const response = await fetch("https://lovora-furniture-home-interior-backend.onrender.com/api/users/profile", {
+                method: "GET",
+                headers: {
+                    Authorization: token,
+                },
+            });
+            const data = await response.json();
+            if (response.ok) {
+                setUser(data);
+            } else {
+                alert(data.message);
+            }
+
+        } catch (error) {
+            console.log(error);
+        }
+    };
+    fetchProfile();
+}, []);
+
+    if (!user) {
+    return <h2>Loading...</h2>;
+}
 
     return (
         <div className="account-page">
@@ -28,7 +56,7 @@ const Account = () => {
             <div className="profile-card">
 
                 <h2>
-                    Welcome, NAME 👋
+                    Welcome, {user.fullName} 👋
                 </h2>
 
                 <div className="profile-info">
@@ -37,7 +65,7 @@ const Account = () => {
                         <i className="fa-solid fa-envelope"></i>
                         <div>
                             <span>Email</span>
-                            <h4>email@gmail.com</h4>
+                            <h4>{user.email}</h4>
                         </div>
                     </div>
 
@@ -45,7 +73,7 @@ const Account = () => {
                         <i className="fa-solid fa-phone"></i>
                         <div>
                             <span>Mobile</span>
-                            <h4>xxxxxxxxxx</h4>
+                            <h4>{user.mobile}</h4>
                         </div>
                     </div>
 
@@ -53,7 +81,7 @@ const Account = () => {
                         <i className="fa-solid fa-location-dot"></i>
                         <div>
                             <span>Address</span>
-                            <h4>Current Address</h4>
+                            <h4>{user.address}</h4>
                         </div>
                     </div>
 
