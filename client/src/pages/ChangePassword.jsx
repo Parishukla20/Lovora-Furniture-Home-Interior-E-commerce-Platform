@@ -27,7 +27,7 @@ const ChangePassword = () => {
     try {
         const token = localStorage.getItem("token");
         const response = await fetch(
-            `${import.meta.env.VITE_API_URL}/api/users/change-password`,
+            `https://lovora-furniture-home-interior-backend.onrender.com/api/users/change-password`,
             {
                 method: "PUT",
                 headers: {
