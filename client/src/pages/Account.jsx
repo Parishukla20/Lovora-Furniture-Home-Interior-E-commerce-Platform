@@ -119,7 +119,10 @@ const Account = () => {
                     <p>Update your details</p>
                 </div>
 
-                <div className="action-card">
+                <div
+                    className="action-card"
+                    onClick={() => navigate("/change-password")}
+                >
                     <i className="fa-solid fa-lock"></i>
                     <h3>Change Password</h3>
                     <p>Keep your account secure</p>
