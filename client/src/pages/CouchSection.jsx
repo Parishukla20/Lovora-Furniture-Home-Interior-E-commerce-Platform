@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import { useWishlist } from "./WishlistContext";
 import { useCart } from "./CartContext";
 import img1 from "../assets/IMAGES/2076143.webp";
@@ -18,6 +19,7 @@ import img14 from "../assets/IMAGES/outdoor-furniture.webp";
 import img15 from "../assets/IMAGES/Better-Homes-Gardens-River-Oaks-3-Piece-Sofa-Nesting-Table-Set-with-Patio-Cover_972d94d7-cce3-46dd-a463-4fc449bbf8e8_4.45b1caf55978cad7f91e106de4e48411.avif";
 
 const CouchSection = () => {
+    const navigate = useNavigate();
     const { toggleWishlist, isWishlisted } = useWishlist();
     const { addToCart, removeFromCart, isInCart } = useCart();
     const p1 = { id: 1, name: "Cozy Egg Lounge Chair", img: img1, price: 15000, cutPrice: 18000, discount: "17% OFF", margin: "200px" };
@@ -60,7 +62,7 @@ const CouchSection = () => {
                         <p className="cut">&#8377;18,000</p>
                         <p className="off">17% OFF</p>
                         <br />
-                        <button type="submit">Buy Now</button>
+                        <button type="button" onClick={() => navigate(`/buy-product/${p1.id}`, { state: { product: p1 } })}>Buy Now</button>
                         <button type="button" onClick={() => toggleWishlist(p1)}>
                             {isWishlisted(p1.id) ? "Remove Wishlist" : "Wishlist"}
                         </button>
