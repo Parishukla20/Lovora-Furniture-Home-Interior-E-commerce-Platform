@@ -13,12 +13,12 @@ const BuyProduct = () => {
 
     return (
         <div>
-            {/* <h1>Buy Product</h1> */}
 
             <img
                 src={product.img}
                 alt={product.name}
-                width="300"
+                width="50%"
+                height="500px"
             />
 
             <h2>{product.name}</h2>
