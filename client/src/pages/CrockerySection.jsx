@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import { useWishlist } from "./WishlistContext";
 import { useCart } from "./CartContext";
 import img1 from "../assets/IMAGES/Crockery1.webp";
@@ -18,6 +19,7 @@ import img14 from "../assets/IMAGES/Crockery14.webp";
 import img15 from "../assets/IMAGES/Crockery15.jpg";
 
 const CrockerySection = () => {
+        const navigate = useNavigate();
         const { toggleWishlist, isWishlisted } = useWishlist();
         const { addToCart, removeFromCart, isInCart } = useCart();
         const p1 = { id: 71, name: "Blue Floral Opalware Dinner Set", img: img1, price: 3319, cutPrice: 3999, discount: "17% OFF" };
@@ -57,7 +59,7 @@ const CrockerySection = () => {
                         <p className="cut">&#8377;3,999</p>
                         <p className="off">17% OFF</p>
                         <br />
-                        <button type="submit">Buy Now</button>
+                        <button type="button" onClick={() => navigate(`/buy-product/${p1.id}`, { state: { product: p1 } })}>Buy Now</button>
                         <button type="button" onClick={() => toggleWishlist(p1)}>
                             {isWishlisted(p1.id) ? "Remove Wishlist" : "Wishlist"}
                         </button>
@@ -90,7 +92,7 @@ const CrockerySection = () => {
                         <p className="cut">&#8377;2,499</p>
                         <p className="off">13% OFF</p>
                         <br />
-                        <button type="submit">Buy Now</button>
+                        <button type="button" onClick={() => navigate(`/buy-product/${p2.id}`, { state: { product: p2 } })}>Buy Now</button>
                         <button type="button" onClick={() => toggleWishlist(p2)}>
                             {isWishlisted(p2.id) ? "Remove Wishlist" : "Wishlist"}
                         </button>
@@ -123,7 +125,7 @@ const CrockerySection = () => {
                         <p className="cut">&#8377;4,499</p>
                         <p className="off">8% OFF</p>
                         <br />
-                        <button type="submit">Buy Now</button>
+                        <button type="button" onClick={() => navigate(`/buy-product/${p3.id}`, { state: { product: p3 } })}>Buy Now</button>
                         <button type="button" onClick={() => toggleWishlist(p3)}>
                             {isWishlisted(p3.id) ? "Remove Wishlist" : "Wishlist"}
                         </button>
@@ -160,7 +162,7 @@ const CrockerySection = () => {
                         <p className="cut">&#8377;1,299</p>
                         <p className="off">7% OFF</p>
                         <br />
-                        <button type="submit">Buy Now</button>
+                        <button type="button" onClick={() => navigate(`/buy-product/${p4.id}`, { state: { product: p4 } })}>Buy Now</button>
                         <button type="button" onClick={() => toggleWishlist(p4)}>
                             {isWishlisted(p4.id) ? "Remove Wishlist" : "Wishlist"}
                         </button>
@@ -193,7 +195,7 @@ const CrockerySection = () => {
                         <p className="cut">&#8377;4,999</p>
                         <p className="off">5% OFF</p>
                         <br />
-                        <button type="submit">Buy Now</button>
+                        <button type="button" onClick={() => navigate(`/buy-product/${p5.id}`, { state: { product: p5 } })}>Buy Now</button>
                         <button type="button" onClick={() => toggleWishlist(p5)}>
                             {isWishlisted(p5.id) ? "Remove Wishlist" : "Wishlist"}
                         </button>
@@ -226,7 +228,7 @@ const CrockerySection = () => {
                         <p className="cut">&#8377;4,999</p>
                         <p className="off">4% OFF</p>
                         <br />
-                        <button type="submit">Buy Now</button>
+                        <button type="button" onClick={() => navigate(`/buy-product/${p6.id}`, { state: { product: p6 } })}>Buy Now</button>
                         <button type="button" onClick={() => toggleWishlist(p6)}>
                             {isWishlisted(p6.id) ? "Remove Wishlist" : "Wishlist"}
                         </button>
@@ -264,7 +266,7 @@ const CrockerySection = () => {
                         <p className="cut">&#8377;2,499</p>
                         <p className="off">5% OFF</p>
                         <br />
-                        <button type="submit">Buy Now</button>
+                        <button type="button" onClick={() => navigate(`/buy-product/${p7.id}`, { state: { product: p7 } })}>Buy Now</button>
                         <button type="button" onClick={() => toggleWishlist(p7)}>
                             {isWishlisted(p7.id) ? "Remove Wishlist" : "Wishlist"}
                         </button>
@@ -297,7 +299,7 @@ const CrockerySection = () => {
                         <p className="cut">&#8377;3,499</p>
                         <p className="off">7% OFF</p>
                         <br />
-                        <button type="submit">Buy Now</button>
+                        <button type="button" onClick={() => navigate(`/buy-product/${p8.id}`, { state: { product: p8 } })}>Buy Now</button>
                         <button type="button" onClick={() => toggleWishlist(p8)}>
                             {isWishlisted(p8.id) ? "Remove Wishlist" : "Wishlist"}
                         </button>
@@ -330,7 +332,7 @@ const CrockerySection = () => {
                         <p className="cut">&#8377;1,999</p>
                         <p className="off">6% OFF</p>
                         <br />
-                        <button type="submit">Buy Now</button>
+                        <button type="button" onClick={() => navigate(`/buy-product/${p9.id}`, { state: { product: p9 } })}>Buy Now</button>
                         <button type="button" onClick={() => toggleWishlist(p9)}>
                             {isWishlisted(p9.id) ? "Remove Wishlist" : "Wishlist"}
                         </button>
@@ -368,7 +370,7 @@ const CrockerySection = () => {
                         <p className="cut">&#8377;2,999</p>
                         <p className="off">19% OFF</p>
                         <br />
-                        <button type="submit">Buy Now</button>
+                        <button type="button" onClick={() => navigate(`/buy-product/${p10.id}`, { state: { product: p10 } })}>Buy Now</button>
                         <button type="button" onClick={() => toggleWishlist(p10)}>
                             {isWishlisted(p10.id) ? "Remove Wishlist" : "Wishlist"}
                         </button>
@@ -401,7 +403,7 @@ const CrockerySection = () => {
                         <p className="cut">&#8377;4,999</p>
                         <p className="off">9% OFF</p>
                         <br />
-                        <button type="submit">Buy Now</button>
+                        <button type="button" onClick={() => navigate(`/buy-product/${p11.id}`, { state: { product: p11 } })}>Buy Now</button>
                         <button type="button" onClick={() => toggleWishlist(p11)}>
                             {isWishlisted(p11.id) ? "Remove Wishlist" : "Wishlist"}
                         </button>
@@ -434,7 +436,7 @@ const CrockerySection = () => {
                         <p className="cut">&#8377;2,999</p>
                         <p className="off">5% OFF</p>
                         <br />
-                        <button type="submit">Buy Now</button>
+                        <button type="button" onClick={() => navigate(`/buy-product/${p12.id}`, { state: { product: p12 } })}>Buy Now</button>
                         <button type="button" onClick={() => toggleWishlist(p12)}>
                             {isWishlisted(p12.id) ? "Remove Wishlist" : "Wishlist"}
                         </button>
@@ -473,7 +475,7 @@ const CrockerySection = () => {
                         <p className="cut">&#8377;24,999</p>
                         <p className="off">8% OFF</p>
                         <br />
-                        <button type="submit">Buy Now</button>
+                        <button type="button" onClick={() => navigate(`/buy-product/${p13.id}`, { state: { product: p13 } })}>Buy Now</button>
                         <button type="button" onClick={() => toggleWishlist(p13)}>
                             {isWishlisted(p13.id) ? "Remove Wishlist" : "Wishlist"}
                         </button>
@@ -506,7 +508,7 @@ const CrockerySection = () => {
                         <p className="cut">&#8377;6,999</p>
                         <p className="off">5% OFF</p>
                         <br />
-                        <button type="submit">Buy Now</button>
+                        <button type="button" onClick={() => navigate(`/buy-product/${p14.id}`, { state: { product: p14 } })}>Buy Now</button>
                         <button type="button" onClick={() => toggleWishlist(p14)}>
                             {isWishlisted(p14.id) ? "Remove Wishlist" : "Wishlist"}
                         </button>
@@ -539,7 +541,7 @@ const CrockerySection = () => {
                         <p className="cut">&#8377;15,999</p>
                         <p className="off">9% OFF</p>
                         <br />
-                        <button type="submit">Buy Now</button>
+                        <button type="button" onClick={() => navigate(`/buy-product/${p15.id}`, { state: { product: p15 } })}>Buy Now</button>
                         <button type="button" onClick={() => toggleWishlist(p15)}>
                             {isWishlisted(p15.id) ? "Remove Wishlist" : "Wishlist"}
                         </button>
