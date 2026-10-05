@@ -4,13 +4,10 @@ import "./BuyProduct.css";
 import { useCart } from "./CartContext";
 
 const BuyProduct = () => {
-
     const location = useLocation();
     const { addToCart } = useCart();
     const product = location.state?.product;
-
     const [quantity, setQuantity] = useState(1);
-
     if (!product) {
         return <h2>Product not found</h2>;
     }
