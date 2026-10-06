@@ -21,7 +21,6 @@ import { AuthProvider } from "./pages/AuthContext";
 import EditProfile from "./pages/EditProfile";
 import ChangePassword from "./pages/ChangePassword";
 import BuyProduct from "./pages/BuyProduct";
-
 function App() {
   return (
     <WishlistProvider>
@@ -50,7 +49,6 @@ function App() {
               <Route path="/change-password" element={<ChangePassword/>} />
               <Route path="/buy-product/:id" element={<BuyProduct />} />
             </Routes>
-
           </BrowserRouter>
         </AuthProvider>
       </CartProvider>
