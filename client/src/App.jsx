@@ -29,7 +29,6 @@ function App() {
           <BrowserRouter>
             <ScrollToTop />
             <Navbar />
-
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/sofa" element={<CouchSection />} />
