@@ -1,7 +1,6 @@
 import React, { createContext, useState, useEffect, useContext } from 'react';
 
 const WishlistContext = createContext();
-
 export const WishlistProvider = ({ children }) => {
     const [wishlist, setWishlist] = useState(() => {
         const saved = localStorage.getItem('my_wishlist');
