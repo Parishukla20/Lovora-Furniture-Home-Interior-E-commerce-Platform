@@ -6,7 +6,6 @@ export const WishlistProvider = ({ children }) => {
         const saved = localStorage.getItem('my_wishlist');
         return saved ? JSON.parse(saved) : [];
     });
-
     useEffect(() => {
         localStorage.setItem('my_wishlist', JSON.stringify(wishlist));
     }, [wishlist]);
@@ -21,14 +20,11 @@ export const WishlistProvider = ({ children }) => {
             }
         });
     };
-
     const isWishlisted = (id) => wishlist.some((item) => item.id === id);
-
     return (
         <WishlistContext.Provider value={{ wishlist, toggleWishlist, isWishlisted }}>
             {children}
         </WishlistContext.Provider>
     );
 };
-
 export const useWishlist = () => useContext(WishlistContext);
