@@ -23,10 +23,8 @@ const BuyProduct = () => {
     };
 
     const totalPrice = product.price * quantity;
-
     return (
         <div className="buy-page">
-
             <div className="buy-product-card">
 
                 {/* Product Image */}
@@ -63,7 +61,6 @@ const BuyProduct = () => {
                         experience.
                     </p>
 
-
                     {/* Price */}
 
                     <div className="price-section">
@@ -84,7 +81,6 @@ const BuyProduct = () => {
 
 
                     <hr />
-
 
                     {/* Quantity */}
 
@@ -131,7 +127,6 @@ const BuyProduct = () => {
 
                     </div>
 
-
                     {/* Benefits */}
 
                     <div className="benefits">
@@ -169,5 +164,4 @@ const BuyProduct = () => {
         </div>
     );
 };
-
 export default BuyProduct;
