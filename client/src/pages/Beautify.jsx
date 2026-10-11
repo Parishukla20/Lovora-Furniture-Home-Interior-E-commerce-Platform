@@ -2,7 +2,6 @@ import { useNavigate } from "react-router-dom";
 import img1 from "../assets/IMAGES/thumb-1920-740968.jpg";
 import img2 from "../assets/IMAGES/617220-furniture-interior-design-living-room-living-room.jpg";
 import img3 from "../assets/IMAGES/Versace-Home-Medusa-95-sofa_06.jpg";
-
 const Beautify = () => {
     const navigate = useNavigate();
     return (
@@ -66,5 +65,4 @@ const Beautify = () => {
         </>
     );
 };
-
 export default Beautify;
