@@ -17,12 +17,10 @@ const Navbar = () => {
           <i className="fa-solid fa-hand-holding-heart"></i>
         </div>
       </div>
-
       <div className="search">
         <img src={img1} alt="" />
         <input type="text" placeholder="search furniture, decor & more..." />
       </div>
-
       <div className="account">
         <div className="likes">
           <Link
@@ -39,7 +37,6 @@ const Navbar = () => {
               <span style={badgeStyle}>{wishlist.length}</span>
             )}
           </Link>
-
           <p>
             <Link
               to="/wishlist"
@@ -49,7 +46,6 @@ const Navbar = () => {
             </Link>
           </p>
         </div>
-
         <div className="bag">
           <Link
             to="/cart"
@@ -65,7 +61,6 @@ const Navbar = () => {
               <span style={badgeStyle}>{cart.length}</span>
             )}
           </Link>
-
           <p>
             <Link
               to="/cart"
@@ -75,7 +70,6 @@ const Navbar = () => {
             </Link>
           </p>
         </div>
-
         <div className="acc">
           <Link
             to={isLoggedIn ? "/account" : "/signup"}
@@ -95,13 +89,11 @@ const Navbar = () => {
               Account
             </Link>
           </p>
-
         </div>
       </div>
     </div>
   );
 };
-
 const badgeStyle = {
   position: "absolute",
   top: "-8px",
@@ -114,5 +106,4 @@ const badgeStyle = {
   fontWeight: "bold",
   lineHeight: "1",
 };
-
 export default Navbar;
