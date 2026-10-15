@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import "./Signup.css";
 import LoginPopup from "../components/LoginPopup";
 import img1 from '../assets/IMAGES/f976673a689a5f7b9a657e2a8486dc70.png';
-
 const Signup = () => {
     const [showLogin, setShowLogin] = useState(false);
     const [formData, setFormData] = useState({
@@ -13,7 +12,6 @@ const Signup = () => {
         createPass: "",
         confirmPass: "",
     });
-
     function validateName(event) {
         event.target.value = event.target.value.replace(/[^a-zA-Z\s]/g, "");
 
@@ -58,7 +56,6 @@ const Signup = () => {
             event.target.setCustomValidity("");
         }
     }
-
     function validateConfirmPass(event) {
         let password = document.getElementById("createPass").value;
         let confirmPassword = event.target.value;
@@ -75,14 +72,12 @@ const Signup = () => {
             event.target.setCustomValidity("");
         }
     }
-
     function handleChange(event) {
         setFormData({
             ...formData,
             [event.target.id]: event.target.value,
         });
     }
-
     async function handleSubmit(event) {
         event.preventDefault();
 
@@ -102,7 +97,6 @@ const Signup = () => {
             });
 
             const data = await response.json();
-
             alert(data.message);
 
             if (response.ok) {
