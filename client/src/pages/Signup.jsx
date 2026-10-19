@@ -3,6 +3,7 @@ import "./Signup.css";
 import LoginPopup from "../components/LoginPopup";
 import img1 from '../assets/IMAGES/f976673a689a5f7b9a657e2a8486dc70.png';
 const Signup = () => {
+
     const [showLogin, setShowLogin] = useState(false);
     const [formData, setFormData] = useState({
         name: "",
@@ -119,7 +120,6 @@ const Signup = () => {
             <div className="sign-img">
                 <img src={img1} alt="" />
             </div>
-
             <div className="form">
                 <form onSubmit={handleSubmit}>
                     <h1>Welcome! Create Your Account</h1>
@@ -143,7 +143,6 @@ const Signup = () => {
                     <input type="password" id="confirmPass" onInput={validateConfirmPass} />
 
                     <button type="submit">Create Account</button>
-
                     <p>
                         Already have an account?
                         <span onClick={() => setShowLogin(true)}>
