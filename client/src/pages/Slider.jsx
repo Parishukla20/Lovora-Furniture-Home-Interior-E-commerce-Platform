@@ -1,14 +1,11 @@
 import { useState, useEffect } from "react";
-
 import img3 from "../assets/IMAGES/WhatsApp Image 2025-03-01 at 6.49.38 PM.jpeg";
 import img2 from "../assets/IMAGES/thumb-1920-602300.jpg";
 import img1 from "../assets/IMAGES/Desktop-Floor-Pictures.jpg";
 
 const Slider = () => {
     const slides = [img1, img2, img3, img1];
-
     const [slideIndex, setSlideIndex] = useState(0);
-
     useEffect(() => {
         const interval = setInterval(() => {
             setSlideIndex((prev) => prev + 1);
@@ -16,7 +13,6 @@ const Slider = () => {
 
         return () => clearInterval(interval);
     }, []);
-
     useEffect(() => {
         if (slideIndex === 3) {
             setTimeout(() => {
@@ -24,11 +20,9 @@ const Slider = () => {
             }, 500);
         }
     }, [slideIndex]);
-
     const nextSlide = () => {
         setSlideIndex((prev) => (prev + 1) % slides.length);
     };
-
     const prevSlide = () => {
         setSlideIndex((prev) => (prev - 1 + slides.length) % slides.length);
     };
@@ -64,5 +58,4 @@ const Slider = () => {
         </div>
     );
 };
-
 export default Slider;
