@@ -6,7 +6,6 @@ import img5 from "../assets/IMAGES/minimalist-green-fabric-sofa-white_1264082-87
 import img6 from "../assets/IMAGES/th (3).jpeg";
 import img7 from "../assets/IMAGES/th.jpeg";
 import img8 from "../assets/IMAGES/th (4).jpeg";
-
 const TrendingSales = () => {
     return (
         <>
@@ -106,5 +105,4 @@ const TrendingSales = () => {
         </>
     );
 };
-
 export default TrendingSales;
